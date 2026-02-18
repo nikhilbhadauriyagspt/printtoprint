@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://printiply.shop/sitemap.xml

@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme {
+  --font-urbanist: "Urbanist", sans-serif;
+  --font-snpro: "SN Pro", sans-serif;
+  --color-brand: #625BF1;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 100s linear infinite;
+}
+
+.pause-on-hover:hover .animate-marquee {
+  animation-play-state: paused;
+}
+
+:root {
+  font-family: var(--font-snpro);
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
