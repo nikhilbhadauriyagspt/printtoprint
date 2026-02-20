@@ -38,7 +38,7 @@ export default function About() {
       </div>
 
       <div className="max-w-[1800px] mx-auto px-6 space-y-24">
-        
+
         {/* --- SECTION 1: OUR JOURNEY --- */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-7 space-y-10">
@@ -54,7 +54,7 @@ export default function About() {
                 PrintToPrint was founded with a vision to redefine how customers experience technology. We saw a gap in the market — too many people struggled to find authentic, affordable, and dependable computing and printing solutions.
               </p>
               <p className="text-amber-900/40 text-base font-medium leading-relaxed border-l-2 border-amber-100 pl-8">
-                That’s why we partnered with HP, to bring customers a seamless and transparent shopping experience backed by expert service. Based in New Orleans, Louisiana, we've grown into a nationwide platform serving both professionals and home users.
+                That’s why we partnered with HP, to bring customers a seamless and transparent shopping experience backed by expert service. Based in Las Vegas, Nevada, we've grown into a nationwide platform serving both professionals and home users.
               </p>
             </div>
           </div>
@@ -80,13 +80,10 @@ export default function About() {
             <h2 className="text-4xl lg:text-5xl font-bold text-[#4A3728] tracking-tight">Specialized Services.</h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2  gap-6">
             {[
-              { icon: Laptop, title: "Laptops & Computers", desc: "High-performance systems for home, business, and professional use." },
               { icon: Printer, title: "Printers & Scanners", desc: "Inkjet, LaserJet, and All-in-One models tailored to every need." },
               { icon: Package, title: "Printing Supplies", desc: "Genuine HP ink, toner, and compatible consumables." },
-              { icon: Zap, title: "Accessories", desc: "Keyboards, cables, and tools that enhance your workspace." },
-              { icon: Globe, title: "Business Solutions", desc: "Managed print and device management for all company sizes." },
             ].map((item, i) => (
               <motion.div
                 key={i} whileHover={{ y: -5 }}
@@ -114,7 +111,7 @@ export default function About() {
             </div>
             <h3 className="text-4xl font-bold leading-tight">Empowering Every <br /><span className="text-amber-400 font-light italic">Customer.</span></h3>
             <p className="text-amber-50/60 text-lg font-medium leading-relaxed max-w-md">
-              To empower every customer with reliable, efficient, and sustainable technology solutions — through genuine products, expert advice, and a customer-first approach.
+              To empower every customer with reliable, efficient, and sustainable printing solutions — through genuine products, expert advice, and a customer-first approach.
             </p>
           </div>
           <div className="p-14 rounded-[3.5rem] bg-white border border-amber-100 text-[#4A3728] space-y-8 relative overflow-hidden group shadow-sm">

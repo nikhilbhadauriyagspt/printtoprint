@@ -283,13 +283,13 @@ export default function Header() {
             </div>
           </div>
 
-          {/* Panel 2: Branding Hub (Permanent Sleek Glass-Split Pill) */}
+          {/* Panel 2: Branding Hub (Prominent Logo + Single Tone Badge) */}
           <div className="flex-shrink-0 flex items-center justify-center pointer-events-auto mx-4 lg:mx-8">
             <Link to="/" className="group relative">
-              <div className={`flex items-center transition-all duration-700 rounded-full border border-amber-100 shadow-xl bg-white/90 backdrop-blur-xl ${scrolled ? 'px-4 lg:px-6 py-1.5' : 'px-6 lg:px-8 py-1 '}`}>
+              <div className={`flex items-center transition-all duration-700 rounded-full border border-amber-100 shadow-sm bg-white/90 backdrop-blur-xl ${scrolled ? 'px-4 lg:px-6 py-1' : 'px-8 lg:px-8 py-1 lg:py-1'}`}>
 
-                {/* Logo Side */}
-                <div className={`flex items-center justify-center transition-all duration-700 ${scrolled ? 'h-8 w-8 lg:h-10 lg:w-16' : 'h-10 w-10 lg:h-14 lg:w-24'}`}>
+                {/* Larger Logo Side */}
+                <div className={`flex items-center justify-center transition-all duration-700 ${scrolled ? 'h-8 w-8 lg:h-12 lg:w-16' : 'h-10 w-10 lg:h-14 lg:w-24'}`}>
                   <img
                     src="/logo/printtoprint_logo.png"
                     alt="P"
@@ -298,15 +298,18 @@ export default function Header() {
                 </div>
 
                 {/* Permanent Vertical Separator */}
-                <div className={`h-8 w-px bg-amber-100 mx-4 lg:mx-6 opacity-50 transition-all duration-700 ${scrolled ? 'h-6 mx-3 lg:mx-4' : 'h-8 mx-6 lg:mx-8'}`} />
+                <div className={`h-8 w-px bg-amber-100 mx-5 lg:mx-7 opacity-50 transition-all duration-700 ${scrolled ? 'h-6' : 'h-10'}`} />
 
-                {/* Permanent HP Partner Side */}
-                <div className="flex flex-col">
-                  <span className={`font-bold text-amber-500 uppercase tracking-[0.3em] leading-none transition-all duration-700 ${scrolled ? 'text-[6px] mb-0.5' : 'text-[7px] lg:text-[8px] mb-1'}`}>HP Authorized</span>
-                  <div className="flex items-center gap-1.5 lg:gap-2">
-                    <img src="/brands/hp.png" alt="" className={`transition-all duration-700 ${scrolled ? 'h-2.5 w-2.5 lg:h-3 lg:w-3' : 'h-3 w-3 lg:h-4 lg:w-4'}`} />
-                    <span className={`font-bold text-[#4A3728] uppercase tracking-widest leading-none transition-all duration-700 ${scrolled ? 'text-[8px] lg:text-[10px]' : 'text-[10px] lg:text-[13px]'}`}>Partner</span>
+                {/* Simplified Single-Tone Partner Side (Uniform Size) */}
+                <div className="flex flex-col gap-1">
+                  <div className="flex items-center gap-2">
+                    <img src="/brands/hp.png" alt="" className={`transition-all duration-700 ${scrolled ? 'h-8 w-8' : 'h-4 w-4 lg:h-10 lg:w-10'}`} />
+                    <span className={`font-bold text-amber-600 uppercase tracking-widest leading-none transition-all duration-700 ${scrolled ? 'text-[8px] lg:text-[10px]' : 'text-[10px] lg:text-[13px]'}`}>Authorized</span>
+
+                    <span className={`font-bold text-amber-600 uppercase tracking-widest leading-none transition-all duration-700 ${scrolled ? 'text-[8px] lg:text-[10px]' : 'text-[10px] lg:text-[13px]'}`}>Partner</span>
+
                   </div>
+
                 </div>
               </div>
             </Link>
@@ -381,11 +384,11 @@ export default function Header() {
               </div>
             </div>
           </div>
-        </div>
-      </header>
+        </div >
+      </header >
 
       {/* --- FULL SCREEN SEARCH OVERLAY --- */}
-      <AnimatePresence>
+      <AnimatePresence AnimatePresence >
         {isSearchOpen && (
           <motion.div
             initial={{ opacity: 0 }}
@@ -532,15 +535,16 @@ export default function Header() {
               </div>
             </div>
           </motion.div>
-        )}
-      </AnimatePresence>
+        )
+        }
+      </AnimatePresence >
 
       {/* Dropdown Backdrop */}
-      <AnimatePresence>
+      < AnimatePresence >
         {activeDropdown === 'categories' && (
           <div className="fixed inset-0 z-[140] bg-black/5 pointer-events-auto" onMouseEnter={() => setActiveDropdown(null)} />
         )}
-      </AnimatePresence>
+      </AnimatePresence >
     </>
   );
 }

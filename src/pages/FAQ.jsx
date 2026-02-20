@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import SEO from '@/components/SEO';
-import { ChevronDown, HelpCircle, Search, Mail, Phone, Plus, Minus, ChevronRight, Sparkles } from 'lucide-react';
+import { ChevronDown, HelpCircle, Search, Mail, MapPin, Plus, Minus, ChevronRight, Sparkles } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const faqData = [
@@ -129,14 +129,17 @@ export default function FAQ() {
               </div>
               <h4 className="text-xl font-bold mb-6">Unresolved <br /><span className="text-amber-400 font-light italic">Inquiry?</span></h4>
               <div className="space-y-4">
-                <a href="mailto:support@printtoprint.shop" className="flex items-center gap-4 text-[11px] font-bold uppercase tracking-widest text-amber-50/60 hover:text-amber-400 transition-colors">
+                <a href="mailto:info@printtoprint.shop" className="flex items-center gap-4 text-[11px] font-bold uppercase tracking-widest text-amber-50/60 hover:text-amber-400 transition-colors">
                   <div className="h-9 w-9 rounded-xl bg-white/5 flex items-center justify-center border border-white/5"><Mail size={16} /></div>
                   Email Access
                 </a>
-                <a href="tel:+1800PRIMEFIX" className="flex items-center gap-4 text-[11px] font-bold uppercase tracking-widest text-amber-50/60 hover:text-amber-400 transition-colors">
-                  <div className="h-9 w-9 rounded-xl bg-white/5 flex items-center justify-center border border-white/5"><Phone size={16} /></div>
-                  Voice Support
-                </a>
+                <div className="flex items-center gap-4 text-[11px] font-bold uppercase tracking-widest text-amber-50/60">
+                  <div className="h-9 w-9 rounded-xl bg-white/5 flex items-center justify-center border border-white/5"><MapPin size={16} /></div>
+                  <div className="flex flex-col">
+                    <span>3140 Polaris Ave Ste 1</span>
+                    <span className="opacity-40 text-[9px]">Las Vegas, NV 89102</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

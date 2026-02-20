@@ -278,7 +278,9 @@ export default function Shop() {
             <div className="bg-white rounded-3xl p-6 border border-amber-100/50 shadow-sm">
               <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-amber-900/40 block mb-4 ml-1">Manufacturers</span>
               <div className="space-y-2 max-h-60 overflow-y-auto custom-scrollbar pr-2">
-                {brands.slice(0, 15).map(b => (
+                {brands
+                  .filter(b => products.some(p => p.brand_name === b.name) || brand === b.name)
+                  .map(b => (
                   <label key={b.id} className="flex items-center gap-3 cursor-pointer group p-1.5 rounded-lg hover:bg-amber-50/50 transition-colors">
                     <div className={`h-4 w-4 rounded border flex items-center justify-center transition-all ${brand === b.name ? 'bg-amber-600 border-amber-600' : 'border-amber-200 bg-white group-hover:border-amber-400'}`}>
                       {brand === b.name && <Check size={10} className="text-white" />}

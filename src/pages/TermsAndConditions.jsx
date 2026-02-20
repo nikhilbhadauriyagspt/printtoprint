@@ -11,7 +11,7 @@ export default function TermsAndConditions() {
       <section>
         <h2>AGREEMENT TO OUR LEGAL TERMS</h2>
         <p>
-          We are PrintToPrint LLC ("Company," "we," "us," "our"), a company registered in Illinois, United States at 9412 S Roberts Rd, Hickory Hills, IL 60457.
+          We are PrintToPrint LLC ("Company," "we," "us," "our"), a company registered in Nevada, United States at 3140 Polaris Ave Ste 1, Las Vegas, NV 89102.
         </p>
         <p>
           We operate the website <a href="http://printtoprint.shop/">http://printtoprint.shop/</a> (the "Site"), as well as any other related products and services that refer or link to these legal terms (the "Legal Terms") (collectively, the "Services").
@@ -20,7 +20,7 @@ export default function TermsAndConditions() {
           Prime Fix Solutions is your trusted destination for authentic, high-performance printers and printing accessories from HP and other leading technology brands.
         </p>
         <p>
-          You can contact us by email at <a href="mailto:info@printtoprint.shop">info@printtoprint.shop</a>, or by mail to 9412 S Roberts Rd, Hickory Hills, IL 60457, United States.
+          You can contact us by email at <a href="mailto:info@printtoprint.shop">info@printtoprint.shop</a>, or by mail to 3140 Polaris Ave Ste 1, Las Vegas, NV 89102, United States.
         </p>
         <p>
           These Legal Terms constitute a legally binding agreement made between you, whether personally or on behalf of an entity ("you"), and PrintToPrint LLC, concerning your access to and use of the Services. You agree that by accessing the Services, you have read, understood, and agreed to be bound by all of these Legal Terms. <strong>IF YOU DO NOT AGREE WITH ALL OF THESE LEGAL TERMS, THEN YOU ARE EXPRESSLY PROHIBITED FROM USING THE SERVICES AND YOU MUST DISCONTINUE USE IMMEDIATELY.</strong>
@@ -293,14 +293,14 @@ export default function TermsAndConditions() {
       <section>
         <h2>15. GOVERNING LAW</h2>
         <p>
-          These Legal Terms and your use of the Services are governed by and construed in accordance with the laws of the State of Louisiana applicable to agreements made and to be entirely performed within the State of Louisiana, without regard to its conflict of law principles.
+          These Legal Terms and your use of the Services are governed by and construed in accordance with the laws of the State of Nevada applicable to agreements made and to be entirely performed within the State of Nevada, without regard to its conflict of law principles.
         </p>
       </section>
 
       <section>
         <h2>16. DISPUTE RESOLUTION</h2>
         <p>
-          Any legal action of whatever nature brought by either you or us (collectively, the "Parties" and individually, a "Party") shall be commenced or prosecuted in the state and federal courts located in Louisiana, and the Parties hereby consent to, and waive all defenses of lack of personal jurisdiction and forum non conveniens with respect to venue and jurisdiction in such state and federal courts. Application of the United Nations Convention on Contracts for the International Sale of Goods and the Uniform Computer Information Transaction Act (UCITA) are excluded from these Legal Terms. In no event shall any claim, action, or proceeding brought by either Party related in any way to the Services be commenced more than one (1) years after the cause of action arose.
+          Any legal action of whatever nature brought by either you or us (collectively, the "Parties" and individually, a "Party") shall be commenced or prosecuted in the state and federal courts located in Nevada, and the Parties hereby consent to, and waive all defenses of lack of personal jurisdiction and forum non conveniens with respect to venue and jurisdiction in such state and federal courts. Application of the United Nations Convention on Contracts for the International Sale of Goods and the Uniform Computer Information Transaction Act (UCITA) are excluded from these Legal Terms. In no event shall any claim, action, or proceeding brought by either Party related in any way to the Services be commenced more than one (1) years after the cause of action arose.
         </p>
       </section>
 
@@ -367,13 +367,13 @@ export default function TermsAndConditions() {
           In order to resolve a complaint regarding the Services or to receive further information regarding use of the Services, please contact us at:
         </p>
         <div className="bg-amber-50/30 p-8 rounded-3xl border border-amber-100 my-8 not-prose">
-          <address className="not-italic text-slate-700 font-bold leading-relaxed space-y-2 uppercase ">
+          <address className="not-italic text-slate-700 font-bold leading-relaxed space-y-2 capitalize ">
             <p className="text-[#4A3728] font-bold">PrintToPrint LLC</p>
             <p>Authorised HP Partner</p>
-            <p>9412 S Roberts Rd</p>
-            <p>Hickory Hills, IL 60457</p>
+            <p>3140 Polaris Ave Ste 1</p>
+            <p>Las Vegas, NV 89102</p>
             <p>United States</p>
-            <p className="pt-4 text-amber-600 font-bold">Email: info@printtoprint.shop</p>
+            <p className="pt-4 text-amber-600 font-bold lowercase">Email: info@printtoprint.shop</p>
           </address>
         </div>
       </section>

@@ -82,7 +82,7 @@ export default function Contact() {
                 <Mail size={20} strokeWidth={1.5} />
               </div>
               <h4 className="text-[10px] font-bold text-amber-400 uppercase tracking-[0.3em] mb-2">Direct Channel</h4>
-              <p className="text-sm font-bold text-[#4A3728]">support@printtoprint.shop</p>
+              <p className="text-sm font-bold text-[#4A3728]">info@printtoprint.shop</p>
               <p className="text-[10px] font-bold text-amber-900/30 uppercase mt-1">24 Hour Response Target</p>
             </div>
 
@@ -91,8 +91,8 @@ export default function Contact() {
                 <MapPin size={20} strokeWidth={1.5} />
               </div>
               <h4 className="text-[10px] font-bold text-amber-400 uppercase tracking-[0.3em] mb-2">Operations</h4>
-              <p className="text-sm font-bold text-[#4A3728]">9412 S Roberts Rd</p>
-              <p className="text-[10px] font-bold text-amber-900/30 uppercase mt-1">Hickory Hills, IL 60457, USA</p>
+              <p className="text-sm font-bold text-[#4A3728]">3140 Polaris Ave Ste 1</p>
+              <p className="text-[10px] font-bold text-amber-900/30 uppercase mt-1">Las Vegas, NV 89102, USA</p>
             </div>
 
             {/* HP Trust Module */}
@@ -100,7 +100,7 @@ export default function Contact() {
               <div className="absolute top-0 right-0 w-32 h-32 bg-white/5 blur-3xl rounded-full -mr-10 -mt-10 group-hover:bg-amber-500/10 transition-colors" />
               <img src="/brands/hp.png" alt="HP" className="h-8 w-auto object-contain mb-6 brightness-0 invert" />
               <h4 className="text-lg font-bold mb-2">Authorized Solutions.</h4>
-              <p className="text-[11px] font-medium text-amber-50/40 uppercase tracking-widest leading-relaxed">Certified support and genuine manufacturer hardware guaranteed.</p>
+              <p className="text-[11px] font-medium text-amber-50/40 uppercase tracking-widest leading-relaxed">Certified support and change this for, genuine Printing Solutions guaranteed.</p>
             </div>
           </div>
 

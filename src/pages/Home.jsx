@@ -67,8 +67,8 @@ export default function Home() {
     <div className="bg-white font-snpro overflow-x-hidden text-slate-900">
       <SEO 
         title="Authorized HP Partner | Premium Printers, Genuine Ink & Toner" 
-        description="Shop authorized HP printers, genuine ink, toner, and premium tech accessories at PrintToPrint. Your trusted partner for high-performance printing solutions in Hickory Hills, IL and nationwide."
-        keywords="HP Authorized Partner, Buy HP Printers Online, Genuine HP Ink and Toner, HP LaserJet, HP OfficeJet, Printer Accessories, Business Printing Solutions, Hickory Hills Tech Store"
+        description="Shop authorized HP printers, genuine ink, toner, and premium tech accessories at PrintToPrint. Your trusted partner for high-performance printing solutions in Las Vegas, IL and nationwide."
+        keywords="HP Authorized Partner, Buy HP Printers Online, Genuine HP Ink and Toner, HP LaserJet, HP OfficeJet, Printer Accessories, Business Printing Solutions, Las Vegas Tech Store"
       />
       
       {/* 1. HERO */}

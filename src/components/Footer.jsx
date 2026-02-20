@@ -66,7 +66,7 @@ export default function Footer() {
                 </div>
               </Link>
               <p className="text-amber-900/40 text-sm font-medium leading-relaxed max-w-xs">
-                The global benchmark for authorized tech distribution and precision hardware solutions.
+                The global benchmark for authorized Printer distribution and precision hardware solutions.
               </p>
             </div>
 
@@ -76,7 +76,6 @@ export default function Footer() {
               </div>
               <div>
                 <p className="text-[10px] font-bold text-[#4A3728] uppercase tracking-widest">HP Global Partner</p>
-                <p className="text-[9px] font-bold text-amber-500 uppercase tracking-widest">Certified 2026</p>
               </div>
             </div>
           </div>

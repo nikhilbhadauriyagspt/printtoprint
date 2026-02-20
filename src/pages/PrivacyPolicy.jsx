@@ -287,8 +287,8 @@ export default function PrivacyPolicy() {
         <address className="not-italic text-slate-700 font-bold leading-relaxed">
           PrintToPrint LLC<br />
           Authorised HP Partner<br />
-          9412 S Roberts Rd<br />
-          Hickory Hills, IL 60457<br />
+          3140 Polaris Ave Ste 1<br />
+          Las Vegas, NV 89102<br />
           United States
         </address>
       </div>

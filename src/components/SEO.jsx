@@ -50,10 +50,10 @@ export default function SEO({ title, description, keywords, schemaType = "Websit
       "description": finalDesc,
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "9412 S Roberts Rd",
-        "addressLocality": "Hickory Hills",
-        "addressRegion": "IL",
-        "postalCode": "60457",
+        "streetAddress": "3140 Polaris Ave Ste 1",
+        "addressLocality": "Las Vegas",
+        "addressRegion": "NV",
+        "postalCode": "89102",
         "addressCountry": "US"
       },
       "contactPoint": {

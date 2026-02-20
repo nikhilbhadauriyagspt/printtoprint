@@ -23,8 +23,8 @@ export default function ReturnPolicy() {
           PrintToPrint LLC<br />
           Attn: Returns<br />
           RMA #<br />
-          9412 S Roberts Rd<br />
-          Hickory Hills, IL 60457<br />
+          3140 Polaris Ave Ste 1<br />
+          Las Vegas, NV 89102<br />
           United States
         </address>
         <p className="mt-6 text-amber-600 font-bold capitalize text-xs tracking-widest">
