@@ -9,29 +9,51 @@ import { Autoplay, FreeMode, Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/free-mode';
 
-// Import local assets
+// Import corrected local banner assets
 import banner1 from "@/assets/bannerr/banner1.jpg";
-import banner5 from "@/assets/bannerr/banner5.jpg";
+import banner2 from "@/assets/bannerr/banner2.jpg";
+import banner3 from "@/assets/bannerr/banner3.jpg";
+import banner4 from "@/assets/bannerr/banner4.jpg";
 
 const slides = [
   {
     id: 1,
-    tag: "Future Tech 2026",
+    tag: "Pro-Series 2026",
     title: "Revolutionary",
     highlight: "Print Mastery.",
-    desc: "Uncompromising precision meets elegant design. Experience the pinnacle of authorized HP printing technology, crafted for the creators of tomorrow.",
-    image: banner5,
-    cta: "View Collection",
+    desc: "Experience high-fidelity LaserJet performance. Engineered for creators who demand absolute clarity and seamless connectivity.",
+    image: banner1,
+    cta: "Explore Series",
     link: "/shop"
   },
   {
     id: 2,
     tag: "Authorized Premium Hub",
+    title: "Master Every",
+    highlight: "Pixel & Page.",
+    desc: "Genuine HP solutions designed to optimize your workflow and deliver vibrant, professional results with every single pass.",
+    image: banner2,
+    cta: "Shop Catalog",
+    link: "/shop"
+  },
+  {
+    id: 3,
+    tag: "Precision Hardware",
     title: "Excellence in",
     highlight: "Every Detail.",
     desc: "Your dedicated source for authentic HP hardware and precision consumables. Elevate your professional output with our curated inventory.",
-    image: banner1,
-    cta: "Explore Catalog",
+    image: banner3,
+    cta: "View Collection",
+    link: "/shop"
+  },
+  {
+    id: 4,
+    tag: "Digital Ecosystem",
+    title: "The Future of",
+    highlight: "Productivity.",
+    desc: "Discover the new standard in professional printing. High-volume performance meets sustainable design for the modern workspace.",
+    image: banner4,
+    cta: "Explore Tech",
     link: "/shop"
   }
 ];
@@ -63,7 +85,7 @@ export default function Hero({ products = [] }) {
   };
 
   return (
-    <div className="relative w-full h-screen min-h-[1000px] bg-[#FFFEF7] overflow-hidden mt-[-80px] lg:mt-[-110px]">
+    <div className="relative w-full h-screen min-h-[900px] bg-[#FFFEF7] overflow-hidden mt-[-80px] lg:mt-[-110px]">
 
       {/* Background Layer: Immersive Image */}
       <AnimatePresence mode="wait">
@@ -80,10 +102,6 @@ export default function Hero({ products = [] }) {
             alt=""
             className="w-full h-full object-cover mix-blend-multiply opacity-50 lg:opacity-70"
           />
-          {/* LEFT-HEAVY GRADIENT: Strong on left, fades to nothing on right */}
-          <div className="absolute inset-0 bg-gradient-to-r from-[#FFFEF7] via-[#FFFEF7]/80 to-transparent w-[70%]" />
-          {/* Subtle bottom fade */}
-          <div className="absolute inset-0 bg-gradient-to-t from-[#FFFEF7]/40 via-transparent to-transparent" />
         </motion.div>
       </AnimatePresence>
 
@@ -153,7 +171,7 @@ export default function Hero({ products = [] }) {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.2 }}
-              className="bg-white/20 backdrop-blur-md rounded-[2rem] border border-white/10 p-8 shadow-sm"
+              className="bg-white/20 backdrop-blur-md rounded-[2.5rem] border border-white/10 p-8 shadow-sm"
             >
               <div className="flex items-center justify-between mb-6 px-2">
                 <div className="flex items-center gap-3">
@@ -199,18 +217,18 @@ export default function Hero({ products = [] }) {
 
       {/* Ticker */}
       <div className="absolute bottom-0 left-0 w-full bg-white/10 backdrop-blur-sm border-t border-amber-100/10 py-3 hidden md:block">
-        <div className="max-w-[1920px] mx-auto px-16 flex justify-between items-center  grayscale  transition-all duration-700">
+        <div className="max-w-[1920px] mx-auto px-16 flex justify-between items-center opacity-30 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-700">
           <div className="flex items-center gap-2">
-            <ShieldCheck size={14} /> <span className="text-[10px] font-bold uppercase tracking-widest text-[#4A3728]">Authorized HP Partner</span>
+            <ShieldCheck size={14} /> <span className="text-[8px] font-bold uppercase tracking-widest text-[#4A3728]">Authorized HP Partner</span>
           </div>
           <div className="flex items-center gap-2">
-            <Globe size={14} /> <span className="text-[10px] font-bold uppercase tracking-widest text-[#4A3728]">Express Delivery</span>
+            <Globe size={14} /> <span className="text-[8px] font-bold uppercase tracking-widest text-[#4A3728]">Express Delivery</span>
           </div>
           <div className="flex items-center gap-2">
-            <Zap size={14} /> <span className="text-[10px] font-bold uppercase tracking-widest text-[#4A3728]">Technical Support</span>
+            <Zap size={14} /> <span className="text-[8px] font-bold uppercase tracking-widest text-[#4A3728]">Technical Support</span>
           </div>
           <div className="flex items-center gap-2">
-            <Headphones size={14} /> <span className="text-[10px] font-bold uppercase tracking-widest text-[#4A3728]">Business Hub</span>
+            <Headphones size={14} /> <span className="text-[8px] font-bold uppercase tracking-widest text-[#4A3728]">Business Hub</span>
           </div>
         </div>
       </div>

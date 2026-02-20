@@ -49,10 +49,10 @@ export default function Footer() {
   return (
     <footer className="bg-[#FFFEF7] font-snpro pt-24 pb-12 border-t border-amber-100">
       <div className="max-w-[1800px] mx-auto px-6">
-        
+
         {/* --- MODULAR TOP PANEL --- */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-16">
-          
+
           {/* Brand Card */}
           <div className="lg:col-span-4 bg-white rounded-[3rem] p-10 border border-amber-100/50 shadow-sm flex flex-col justify-between">
             <div className="space-y-8">
@@ -69,7 +69,7 @@ export default function Footer() {
                 The global benchmark for authorized tech distribution and precision hardware solutions.
               </p>
             </div>
-            
+
             <div className="mt-10 flex items-center gap-4">
               <div className="h-10 w-10 bg-white rounded-xl border border-amber-100 flex items-center justify-center p-2 shadow-sm">
                 <img src="/brands/hp.png" alt="HP" className="max-w-full max-h-full object-contain" />
@@ -171,8 +171,7 @@ export default function Footer() {
 
           <div className="flex items-center gap-4 opacity-40">
             <span className="text-[10px] font-bold text-[#4A3728]">PAYPAL</span>
-            <div className="h-3 w-px bg-amber-200" />
-            <span className="text-[10px] font-bold text-[#4A3728]">STRIPE</span>
+
           </div>
         </div>
 
