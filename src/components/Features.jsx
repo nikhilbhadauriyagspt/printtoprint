@@ -2,111 +2,85 @@ import { motion } from "framer-motion";
 import {
   ShieldCheck,
   Truck,
-  RotateCcw,
   Headphones,
-  CheckCircle2,
-  PackageCheck,
-  CreditCard,
-  Award
+  Award,
+  Sparkles
 } from "lucide-react";
 
 const features = [
   {
     icon: Award,
-    label: "Authorized Partner",
-    sub: "Certified 100% Genuine",
-    desc: "Direct from manufacturer",
-    color: "group-hover:text-brand",
-    bg: "group-hover:bg-brand",
-    border: "group-hover:border-brand/20"
+    title: "Authorized Partner",
+    desc: "100% Genuine HP Inventory",
+    accent: "bg-amber-50 text-amber-600"
   },
   {
     icon: Truck,
-    label: "Express Logistics",
-    sub: "Global Priority Shipping",
-    desc: "Insured & Tracked",
-    color: "group-hover:text-emerald-600",
-    bg: "group-hover:bg-emerald-600",
-    border: "group-hover:border-emerald-200"
+    title: "Express Logistics",
+    desc: "Fast Global Priority Delivery",
+    accent: "bg-amber-50 text-amber-600"
   },
   {
     icon: ShieldCheck,
-    label: "Buyer Protection",
-    sub: "Comprehensive Warranty",
-    desc: "Full coverage included",
-    color: "group-hover:text-purple-600",
-    bg: "group-hover:bg-purple-600",
-    border: "group-hover:border-purple-200"
+    title: "Elite Protection",
+    desc: "Comprehensive Brand Warranty",
+    accent: "bg-amber-50 text-amber-600"
   },
   {
     icon: Headphones,
-    label: "Expert Support",
-    sub: "24/7 Tech Consultation",
-    desc: "Real human agents",
-    color: "group-hover:text-amber-600",
-    bg: "group-hover:bg-amber-600",
-    border: "group-hover:border-amber-200"
+    title: "Expert Support",
+    desc: "24/7 Dedicated Consultation",
+    accent: "bg-amber-50 text-amber-600"
   }
 ];
 
 export default function Features() {
   return (
-    <section className="py-20 bg-white relative overflow-hidden font-snpro">
-      <div className="max-w-[1920px] mx-auto px-4 md:px-10 lg:px-12">
-
-        {/* Section Header - Stylish & Compact */}
-        <div className="mb-12 flex gap-6 items-center">
-          {/* Vertical Decorative Bar */}
-          <div className="hidden md:block h-16 w-1.5 bg-brand rounded-full"></div>
-
-          <div className="space-y-1">
-            <span className="text-[10px] font-bold text-slate-400 capitalize tracking-[0.3em] flex items-center gap-2">
-              <div className="h-1 w-1 rounded-full bg-brand"></div>
-              Why Choose Us
-            </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-brand capitalize  leading-none">
-              The <span className="text-slate-400 ">Advantage.</span>
-            </h2>
+    <section className="py-24 bg-[#FFFEF7] font-snpro">
+      <div className="max-w-[1800px] mx-auto px-6">
+        
+        {/* --- STANDARDIZED SECTION HEADER --- */}
+        <div className="flex flex-col gap-4 mb-16">
+          <div className="flex items-center gap-3 opacity-40">
+            <div className="h-[1px] w-8 bg-amber-900" />
+            <span className="text-[10px] font-bold text-amber-900 uppercase tracking-[0.4em]">The Standard</span>
           </div>
+          <h2 className="text-4xl lg:text-5xl font-bold text-[#4A3728] tracking-tight">
+            Strategic <span className="text-amber-500 italic font-light">Performance.</span>
+          </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {features.map((item, index) => (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-16">
+          {features.map((item, i) => (
             <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
+              key={i}
+              initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: index * 0.1, duration: 0.5 }}
-              className={`group relative p-8 rounded-[2rem] bg-slate-50 border border-slate-100 ${item.border} hover:bg-white hover:shadow-[0_20px_50px_-10px_rgba(0,0,0,0.08)] transition-all duration-500 cursor-default overflow-hidden`}
+              transition={{ duration: 0.5, delay: i * 0.1 }}
+              className="flex items-start gap-5 group"
             >
-              {/* Hover Gradient Splash */}
-              <div className={`absolute top-0 right-0 w-32 h-32 opacity-0 group-hover:opacity-10 transition-opacity duration-500 bg-gradient-to-bl from-current to-transparent rounded-bl-[100%] pointer-events-none ${item.color}`} />
+              {/* Minimal Icon Hub */}
+              <div className={`h-12 w-12 shrink-0 rounded-2xl border border-amber-100/50 flex items-center justify-center transition-all duration-500 group-hover:bg-[#4A3728] group-hover:text-white group-hover:border-transparent group-hover:shadow-lg group-hover:shadow-amber-900/10 text-amber-500 bg-white`}>
+                <item.icon size={20} strokeWidth={1.5} />
+              </div>
 
-              <div className="relative z-10 flex flex-col items-center text-center">
-
-                {/* Icon Container */}
-                <div className={`mb-6 h-16 w-16 rounded-2xl bg-white border border-slate-100 flex items-center justify-center shadow-sm group-hover:scale-110 transition-transform duration-500 ${item.bg} group-hover:text-white group-hover:border-transparent text-slate-400`}>
-                  <item.icon size={28} strokeWidth={1.5} />
-                </div>
-
-                {/* Text Content */}
-                <h3 className="text-lg font-bold text-slate-900 capitalize  mb-2 group-hover:scale-105 transition-transform duration-300">
-                  {item.label}
+              {/* Precise Typography */}
+              <div className="space-y-1.5 py-1">
+                <h3 className="text-[13px] font-bold text-[#4A3728] uppercase tracking-wider group-hover:text-amber-600 transition-colors">
+                  {item.title}
                 </h3>
-
-                <div className={`h-0.5 w-8 bg-slate-200 mb-3 rounded-full group-hover:w-16 transition-all duration-500 ${item.bg} group-hover:opacity-50 opacity-0`}></div>
-
-                <p className="text-[11px] font-bold text-slate-500 capitalize tracking-widest mb-1">
-                  {item.sub}
-                </p>
-                <p className="text-[10px] font-bold text-slate-400 opacity-60">
+                <p className="text-[11px] font-medium text-amber-900/40 leading-tight">
                   {item.desc}
                 </p>
+                
+                {/* Micro-interaction Line */}
+                <div className="h-0.5 w-4 bg-amber-200 rounded-full transition-all duration-500 group-hover:w-8 group-hover:bg-amber-500" />
               </div>
             </motion.div>
           ))}
         </div>
+
       </div>
     </section>
   );

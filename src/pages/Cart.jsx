@@ -12,13 +12,13 @@ export default function Cart() {
 
   if (cart.length === 0) {
     return (
-      <div className="min-h-screen flex flex-col items-center justify-center pt-20 px-6 font-urbanist bg-white">
-        <div className="h-24 w-24 rounded-full bg-gray-50 flex items-center justify-center mb-8">
-          <ShoppingBag size={40} className="text-gray-200" />
+      <div className="min-h-screen flex flex-col items-center justify-center pt-20 px-6 font-urbanist bg-[#FFFEF7]">
+        <div className="h-20 w-20 rounded-full bg-amber-50 flex items-center justify-center mb-8">
+          <ShoppingBag size={32} className="text-amber-200" />
         </div>
-        <h2 className="text-3xl font-bold text-slate-900 capitalize  mb-4">Your cart is empty</h2>
-        <p className="text-slate-400 font-bold capitalize tracking-widest text-[10px] mb-10">Looks like you haven't added anything to your cart yet.</p>
-        <Link to="/shop" className="px-12 py-5 bg-black text-white text-[10px] font-bold capitalize tracking-[0.3em] rounded-2xl hover:bg-blue-600 transition-all shadow-xl">
+        <h2 className="text-3xl font-bold text-[#4A3728] capitalize mb-4">Your bag is empty</h2>
+        <p className="text-amber-400 font-bold capitalize tracking-widest text-[10px] mb-10">Looks like you haven't added anything to your cart yet.</p>
+        <Link to="/shop" className="px-10 py-4 bg-[#4A3728] text-white text-[10px] font-bold capitalize tracking-[0.2em] rounded-xl hover:bg-amber-800 transition-all shadow-lg">
           Start Shopping
         </Link>
       </div>
@@ -26,17 +26,17 @@ export default function Cart() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50/50 pt-32 pb-20 font-urbanist">
+    <div className="min-h-screen bg-[#FFFEF7] pt-32 pb-20 font-urbanist">
       <div className="max-w-[1400px] mx-auto px-6 md:px-10">
 
-        <div className="flex items-end justify-between mb-12 border-b border-gray-200 pb-8">
+        <div className="flex items-end justify-between mb-12 border-b border-amber-100 pb-8">
           <div>
-            <span className="text-[10px] font-bold tracking-[0.4em] capitalize text-blue-600 mb-2 block ml-1">Your Selection</span>
-            <h1 className="text-5xl font-bold text-slate-900  capitalize leading-none">
-              Shopping <span className="text-slate-400 italic">Bag.</span>
+            <span className="text-[10px] font-bold tracking-[0.4em] capitalize text-amber-500 mb-2 block ml-1">Your Selection</span>
+            <h1 className="text-5xl font-bold text-[#4A3728] capitalize leading-none">
+              Shopping <span className="text-amber-200 italic">Bag.</span>
             </h1>
           </div>
-          <p className="text-xs font-bold capitalize tracking-widest text-slate-400 pb-1">{cartCount} Items</p>
+          <p className="text-xs font-bold capitalize tracking-widest text-amber-400 pb-1">{cartCount} Items</p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
@@ -51,35 +51,35 @@ export default function Cart() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, x: -20 }}
-                  className="bg-white rounded-[2rem] border border-gray-100 p-6 flex flex-col sm:flex-row items-center gap-8 group hover:shadow-xl hover:shadow-gray-200/20 transition-all"
+                  className="bg-white rounded-3xl border border-amber-50 p-6 flex flex-col sm:flex-row items-center gap-8 group hover:shadow-md transition-all"
                 >
-                  <div className="h-32 w-32 rounded-2xl bg-gray-50 p-4 flex items-center justify-center flex-shrink-0">
+                  <div className="h-32 w-32 rounded-2xl bg-amber-50/30 p-4 flex items-center justify-center flex-shrink-0">
                     <img
                       src={item.images ? `${(typeof item.images === 'string' ? JSON.parse(item.images)[0] : item.images[0])}` : ''}
                       alt={item.name}
-                      className="max-w-full max-h-full object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-500"
+                      className="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-500"
                       onError={(e) => { e.target.src = "https://via.placeholder.com/150x150"; }}
                     />
                   </div>
 
                   <div className="flex-1 min-w-0">
                     <div className="flex flex-col mb-4">
-                      <span className="text-[9px] font-bold text-blue-600 capitalize tracking-widest mb-1">{item.brand_name}</span>
-                      <h3 className="text-lg font-bold text-slate-900 capitalize  leading-tight line-clamp-1">{item.name}</h3>
+                      <span className="text-[9px] font-bold text-amber-500 capitalize tracking-widest mb-1">{item.brand_name}</span>
+                      <h3 className="text-lg font-bold text-[#4A3728] capitalize leading-tight line-clamp-1">{item.name}</h3>
                     </div>
                     <div className="flex items-center gap-8">
-                      <div className="h-10 px-3 bg-gray-50 rounded-xl border border-gray-100 flex items-center gap-4">
-                        <button onClick={() => updateQuantity(item.id, item.quantity - 1)} className="p-1 hover:text-blue-600 transition-colors"><Minus size={14} /></button>
-                        <span className="text-xs font-bold w-4 text-center">{item.quantity}</span>
-                        <button onClick={() => updateQuantity(item.id, item.quantity + 1)} className="p-1 hover:text-blue-600 transition-colors"><Plus size={14} /></button>
+                      <div className="h-10 px-3 bg-amber-50/50 rounded-xl border border-amber-100/50 flex items-center gap-4">
+                        <button onClick={() => updateQuantity(item.id, item.quantity - 1)} className="p-1 text-amber-600 hover:text-amber-800 transition-colors"><Minus size={14} /></button>
+                        <span className="text-xs font-bold w-4 text-center text-[#4A3728]">{item.quantity}</span>
+                        <button onClick={() => updateQuantity(item.id, item.quantity + 1)} className="p-1 text-amber-600 hover:text-amber-800 transition-colors"><Plus size={14} /></button>
                       </div>
-                      <span className="text-lg font-bold text-slate-900">${item.price * item.quantity}</span>
+                      <span className="text-lg font-bold text-[#4A3728]">${item.price * item.quantity}</span>
                     </div>
                   </div>
 
                   <button
                     onClick={() => removeFromCart(item.id)}
-                    className="h-12 w-12 rounded-2xl bg-gray-50 text-slate-400 flex items-center justify-center hover:bg-red-50 hover:text-red-500 transition-all"
+                    className="h-10 w-10 rounded-xl bg-amber-50/50 text-amber-300 flex items-center justify-center hover:bg-red-50 hover:text-red-500 transition-all"
                   >
                     <Trash2 size={18} />
                   </button>
@@ -87,43 +87,43 @@ export default function Cart() {
               ))}
             </AnimatePresence>
 
-            <Link to="/shop" className="inline-flex items-center gap-2 text-[10px] font-bold capitalize tracking-widest text-slate-400 hover:text-blue-600 transition-colors pt-6">
+            <Link to="/shop" className="inline-flex items-center gap-2 text-[10px] font-bold capitalize tracking-widest text-amber-400 hover:text-amber-600 transition-colors pt-6">
               <ChevronLeft size={14} /> Continue Shopping
             </Link>
           </div>
 
           {/* Summary */}
           <div className="lg:col-span-4">
-            <div className="bg-slate-900 rounded-[3rem] p-10 text-white sticky top-40">
-              <h3 className="text-[10px] font-bold capitalize tracking-[0.4em] text-blue-400 mb-8">Order Summary</h3>
+            <div className="bg-[#4A3728] rounded-[2.5rem] p-10 text-amber-50 sticky top-40 shadow-xl">
+              <h3 className="text-[10px] font-bold capitalize tracking-[0.4em] text-amber-400 mb-8">Summary</h3>
 
               <div className="space-y-6 mb-10">
                 <div className="flex justify-between items-center border-b border-white/5 pb-4">
-                  <span className="text-[11px] font-bold text-slate-400 capitalize tracking-widest">Subtotal</span>
+                  <span className="text-[11px] font-bold text-amber-200/50 capitalize tracking-widest">Subtotal</span>
                   <span className="text-lg font-bold">${total}</span>
                 </div>
                 <div className="flex justify-between items-center border-b border-white/5 pb-4">
-                  <span className="text-[11px] font-bold text-slate-400 capitalize tracking-widest">Shipping</span>
-                  <span className="text-xs font-bold capitalize tracking-widest text-emerald-400">Calculated at next step</span>
+                  <span className="text-[11px] font-bold text-amber-200/50 capitalize tracking-widest">Delivery</span>
+                  <span className="text-xs font-bold capitalize tracking-widest text-amber-400">Calculated next</span>
                 </div>
                 <div className="flex justify-between items-center pt-2">
                   <span className="text-xs font-bold capitalize tracking-[0.2em]">Grand Total</span>
-                  <span className="text-3xl font-bold">${total}</span>
+                  <span className="text-3xl font-bold text-white">${total}</span>
                 </div>
               </div>
 
               <Link
                 to="/checkout"
-                className="w-full h-16 bg-blue-600 hover:bg-white hover:text-slate-900 text-white rounded-2xl flex items-center justify-center gap-3 text-xs font-bold capitalize tracking-[0.2em] transition-all shadow-2xl shadow-blue-600/20 active:scale-[0.98]"
+                className="w-full h-14 bg-amber-500 hover:bg-white hover:text-[#4A3728] text-white rounded-xl flex items-center justify-center gap-3 text-xs font-bold capitalize tracking-[0.1em] transition-all shadow-lg active:scale-[0.98]"
               >
-                Proceed to Checkout
-                <ArrowRight size={18} />
+                Go to Checkout
+                <ArrowRight size={16} />
               </Link>
 
               <div className="mt-8 pt-8 border-t border-white/5">
-                <p className="text-[9px] font-bold text-slate-500 capitalize tracking-widest text-center leading-relaxed">
-                  SECURE CHECKOUT POWERED BY STRIPE. <br />
-                  30-DAY MONEY BACK GUARANTEE ON ALL ORDERS.
+                <p className="text-[9px] font-bold text-amber-200/30 capitalize tracking-widest text-center leading-relaxed">
+                  SECURE CHECKOUT GUARANTEED. <br />
+                  AUTHORIZED BRAND WARRANTY INCLUDED.
                 </p>
               </div>
             </div>

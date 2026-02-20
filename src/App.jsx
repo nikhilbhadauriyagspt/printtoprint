@@ -2,7 +2,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { CartProvider } from './context/CartContext';
 import { PayPalScriptProvider } from "@paypal/react-paypal-js";
 import Header from './components/Header';
-import BrandMarquee from './components/BrandMarquee';
 import Footer from './components/Footer';
 import Toast from './components/Toast';
 import CartDrawer from './components/CartDrawer';
@@ -41,7 +40,6 @@ import UserManager from './pages/admin/UserManager';
 const ShopLayout = ({ children }) => (
   <div className="bg-white min-h-screen flex flex-col">
     <Header />
-    <BrandMarquee />
     <main className="flex-grow">
       {children}
     </main>
@@ -59,52 +57,52 @@ function App() {
   return (
     <CartProvider>
       <PayPalScriptProvider options={paypalOptions}>
-                    <Router>
-                      <ScrollToTop />
-                      <Toast />                <CartDrawer />
-                <BottomNav />
-                <Routes>        {/* Customer Routes */}
-        <Route path="/" element={<ShopLayout><Home /></ShopLayout>} />
-        <Route path="/shop" element={<ShopLayout><Shop /></ShopLayout>} />
-        <Route path="/category/:category" element={<ShopLayout><Shop /></ShopLayout>} />
-        <Route path="/brand/:brand" element={<ShopLayout><Shop /></ShopLayout>} />
-        <Route path="/product/:slug" element={<ShopLayout><ProductDetail /></ShopLayout>} />
-        <Route path="/about" element={<ShopLayout><About /></ShopLayout>} />
-        <Route path="/contact" element={<ShopLayout><Contact /></ShopLayout>} />
-        <Route path="/cart" element={<ShopLayout><Cart /></ShopLayout>} />
-        <Route path="/wishlist" element={<ShopLayout><Wishlist /></ShopLayout>} />
-        <Route path="/checkout" element={<ShopLayout><Checkout /></ShopLayout>} />
-        <Route path="/orders" element={<ShopLayout><Orders /></ShopLayout>} />
-        <Route path="/faq" element={<ShopLayout><FAQ /></ShopLayout>} />
-        <Route path="/profile" element={<ShopLayout><Profile /></ShopLayout>} />
-        <Route path="/privacy-policy" element={<ShopLayout><PrivacyPolicy /></ShopLayout>} />
-        <Route path="/cookie-policy" element={<ShopLayout><CookiePolicy /></ShopLayout>} />
-        <Route path="/terms-and-conditions" element={<ShopLayout><TermsAndConditions /></ShopLayout>} />
-        <Route path="/return-policy" element={<ShopLayout><ReturnPolicy /></ShopLayout>} />
-        <Route path="/shipping-policy" element={<ShopLayout><ShippingPolicy /></ShopLayout>} />
-        <Route path="/login" element={<ShopLayout><UserLogin /></ShopLayout>} />
-        <Route path="/signup" element={<ShopLayout><UserSignup /></ShopLayout>} />
-        
-        {/* Admin Auth */}
-        <Route path="/admin-login" element={<AdminLogin />} />
+        <Router>
+          <ScrollToTop />
+          <Toast />                <CartDrawer />
+          <BottomNav />
+          <Routes>        {/* Customer Routes */}
+            <Route path="/" element={<ShopLayout><Home /></ShopLayout>} />
+            <Route path="/shop" element={<ShopLayout><Shop /></ShopLayout>} />
+            <Route path="/category/:category" element={<ShopLayout><Shop /></ShopLayout>} />
+            <Route path="/brand/:brand" element={<ShopLayout><Shop /></ShopLayout>} />
+            <Route path="/product/:slug" element={<ShopLayout><ProductDetail /></ShopLayout>} />
+            <Route path="/about" element={<ShopLayout><About /></ShopLayout>} />
+            <Route path="/contact" element={<ShopLayout><Contact /></ShopLayout>} />
+            <Route path="/cart" element={<ShopLayout><Cart /></ShopLayout>} />
+            <Route path="/wishlist" element={<ShopLayout><Wishlist /></ShopLayout>} />
+            <Route path="/checkout" element={<ShopLayout><Checkout /></ShopLayout>} />
+            <Route path="/orders" element={<ShopLayout><Orders /></ShopLayout>} />
+            <Route path="/faq" element={<ShopLayout><FAQ /></ShopLayout>} />
+            <Route path="/profile" element={<ShopLayout><Profile /></ShopLayout>} />
+            <Route path="/privacy-policy" element={<ShopLayout><PrivacyPolicy /></ShopLayout>} />
+            <Route path="/cookie-policy" element={<ShopLayout><CookiePolicy /></ShopLayout>} />
+            <Route path="/terms-and-conditions" element={<ShopLayout><TermsAndConditions /></ShopLayout>} />
+            <Route path="/return-policy" element={<ShopLayout><ReturnPolicy /></ShopLayout>} />
+            <Route path="/shipping-policy" element={<ShopLayout><ShippingPolicy /></ShopLayout>} />
+            <Route path="/login" element={<ShopLayout><UserLogin /></ShopLayout>} />
+            <Route path="/signup" element={<ShopLayout><UserSignup /></ShopLayout>} />
 
-        {/* Protected Admin Routes */}
-        <Route path="/admin" element={<AdminLayout />}>
-          <Route index element={<Dashboard />} />
-          <Route path="dashboard" element={<Dashboard />} />
-          <Route path="products" element={<ProductManager />} />
-          <Route path="products/add" element={<ProductForm />} />
-          <Route path="products/edit/:id" element={<ProductForm />} />
-          <Route path="categories" element={<CategoryManager />} />
-          <Route path="orders" element={<OrderManager />} />
-          <Route path="contacts" element={<ContactManager />} />
-          <Route path="newsletter" element={<NewsletterManager />} />
-          <Route path="users" element={<UserManager />} />
-          <Route path="settings" element={<div>Settings (Coming Soon)</div>} />
-        </Route>
-                      </Routes>
-                      </Router>
-                    </PayPalScriptProvider>
-                  </CartProvider>
-                );
-              }export default App;
+            {/* Admin Auth */}
+            <Route path="/admin-login" element={<AdminLogin />} />
+
+            {/* Protected Admin Routes */}
+            <Route path="/admin" element={<AdminLayout />}>
+              <Route index element={<Dashboard />} />
+              <Route path="dashboard" element={<Dashboard />} />
+              <Route path="products" element={<ProductManager />} />
+              <Route path="products/add" element={<ProductForm />} />
+              <Route path="products/edit/:id" element={<ProductForm />} />
+              <Route path="categories" element={<CategoryManager />} />
+              <Route path="orders" element={<OrderManager />} />
+              <Route path="contacts" element={<ContactManager />} />
+              <Route path="newsletter" element={<NewsletterManager />} />
+              <Route path="users" element={<UserManager />} />
+              <Route path="settings" element={<div>Settings (Coming Soon)</div>} />
+            </Route>
+          </Routes>
+        </Router>
+      </PayPalScriptProvider>
+    </CartProvider>
+  );
+} export default App;

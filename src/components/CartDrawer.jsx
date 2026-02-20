@@ -29,19 +29,19 @@ export default function CartDrawer() {
             animate={{ x: 0 }}
             exit={{ x: '100%' }}
             transition={{ type: 'spring', damping: 25, stiffness: 200 }}
-            className="fixed top-0 right-0 h-full w-full max-w-[450px] bg-white z-[1001] shadow-2xl flex flex-col font-urbanist"
+            className="fixed top-0 right-0 h-full w-full max-w-[450px] bg-[#FFFEF7] z-[1001] shadow-2xl flex flex-col font-urbanist border-l border-amber-100"
           >
             {/* Header */}
-            <div className="p-8 border-b border-gray-100 flex items-center justify-between">
+            <div className="p-8 border-b border-amber-50 flex items-center justify-between">
               <div>
-                <h2 className="text-2xl font-bold text-slate-900  capitalize">Your Bag.</h2>
-                <p className="text-[10px] font-bold text-blue-600 capitalize tracking-widest mt-1">{cartCount} premium items</p>
+                <h2 className="text-2xl font-bold text-[#4A3728] capitalize">Your Bag.</h2>
+                <p className="text-[10px] font-bold text-amber-600 capitalize tracking-widest mt-1">{cartCount} selected items</p>
               </div>
               <button
                 onClick={closeCartDrawer}
-                className="h-12 w-12 rounded-full bg-gray-50 flex items-center justify-center text-slate-900 hover:bg-black hover:text-white transition-all"
+                className="h-10 w-10 rounded-full bg-amber-50 flex items-center justify-center text-[#4A3728] hover:bg-amber-100 transition-all"
               >
-                <X size={20} />
+                <X size={18} />
               </button>
             </div>
 
@@ -51,34 +51,34 @@ export default function CartDrawer() {
                 <div className="space-y-8">
                   {cart.map((item) => (
                     <div key={item.id} className="flex gap-6 group">
-                      <div className="h-24 w-24 rounded-2xl bg-gray-50 p-4 flex items-center justify-center flex-shrink-0 relative">
+                      <div className="h-24 w-24 rounded-2xl bg-white p-4 flex items-center justify-center flex-shrink-0 relative border border-amber-50 shadow-sm">
                         <img
                           src={item.images ? `${(typeof item.images === 'string' ? JSON.parse(item.images)[0] : item.images[0])}` : ''}
                           alt={item.name}
-                          className="max-w-full max-h-full object-contain mix-blend-multiply group-hover:scale-110 transition-transform"
+                          className="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform"
                           onError={(e) => { e.target.src = "https://via.placeholder.com/100x100"; }}
                         />
                       </div>
                       <div className="flex-1 min-w-0 py-1">
                         <div className="flex justify-between items-start mb-2">
                           <div className="min-w-0">
-                            <p className="text-[9px] font-bold text-blue-600 capitalize tracking-widest mb-1">{item.brand_name}</p>
-                            <h3 className="text-sm font-bold text-slate-900 capitalize truncate pr-4">{item.name}</h3>
+                            <p className="text-[9px] font-bold text-amber-500 capitalize tracking-widest mb-1">{item.brand_name}</p>
+                            <h3 className="text-sm font-bold text-[#4A3728] capitalize truncate pr-4">{item.name}</h3>
                           </div>
                           <button
                             onClick={() => removeFromCart(item.id)}
-                            className="text-slate-300 hover:text-red-500 transition-colors"
+                            className="text-amber-200 hover:text-red-500 transition-colors"
                           >
                             <Trash2 size={14} />
                           </button>
                         </div>
                         <div className="flex items-center justify-between mt-4">
-                          <div className="flex items-center gap-4 bg-gray-50 rounded-lg px-2 py-1 border border-gray-100">
-                            <button onClick={() => updateQuantity(item.id, item.quantity - 1)} className="hover:text-blue-600"><Minus size={12} /></button>
-                            <span className="text-[11px] font-bold w-3 text-center">{item.quantity}</span>
-                            <button onClick={() => updateQuantity(item.id, item.quantity + 1)} className="hover:text-blue-600"><Plus size={12} /></button>
+                          <div className="flex items-center gap-4 bg-amber-50 rounded-lg px-2 py-1 border border-amber-100/50">
+                            <button onClick={() => updateQuantity(item.id, item.quantity - 1)} className="text-amber-600 hover:text-amber-800"><Minus size={12} /></button>
+                            <span className="text-[11px] font-bold w-3 text-center text-[#4A3728]">{item.quantity}</span>
+                            <button onClick={() => updateQuantity(item.id, item.quantity + 1)} className="text-amber-600 hover:text-amber-800"><Plus size={12} /></button>
                           </div>
-                          <span className="text-sm font-bold text-slate-900">${item.price * item.quantity}</span>
+                          <span className="text-sm font-bold text-[#4A3728]">${item.price * item.quantity}</span>
                         </div>
                       </div>
                     </div>
@@ -86,14 +86,14 @@ export default function CartDrawer() {
                 </div>
               ) : (
                 <div className="h-full flex flex-col items-center justify-center text-center">
-                  <div className="h-20 w-20 rounded-full bg-gray-50 flex items-center justify-center mb-6">
-                    <ShoppingBag size={32} className="text-gray-200" />
+                  <div className="h-16 w-16 rounded-full bg-amber-50 flex items-center justify-center mb-6">
+                    <ShoppingBag size={24} className="text-amber-200" />
                   </div>
-                  <h3 className="text-lg font-bold text-slate-900 capitalize mb-2">Your bag is empty</h3>
-                  <p className="text-xs font-bold text-slate-400 capitalize tracking-widest mb-8">Start adding some premium tech</p>
+                  <h3 className="text-lg font-bold text-[#4A3728] capitalize mb-2">Your bag is empty</h3>
+                  <p className="text-xs font-bold text-amber-300 capitalize tracking-widest mb-8">Discover our collection</p>
                   <button
                     onClick={closeCartDrawer}
-                    className="px-8 py-4 bg-black text-white text-[10px] font-bold capitalize tracking-widest rounded-xl hover:bg-blue-600 transition-all"
+                    className="px-8 py-3 bg-[#4A3728] text-white text-[10px] font-bold capitalize tracking-widest rounded-xl hover:bg-amber-800 transition-all"
                   >
                     Explore Shop
                   </button>
@@ -103,30 +103,30 @@ export default function CartDrawer() {
 
             {/* Footer */}
             {cart.length > 0 && (
-              <div className="p-8 bg-gray-50 border-t border-gray-100">
+              <div className="p-8 bg-[#FFFEF7] border-t border-amber-50">
                 <div className="flex items-center justify-between mb-8">
-                  <span className="text-[11px] font-bold text-slate-400 capitalize tracking-[0.2em]">Subtotal</span>
-                  <span className="text-2xl font-bold text-slate-900">${total}</span>
+                  <span className="text-[10px] font-bold text-amber-400 capitalize tracking-widest">Estimated Total</span>
+                  <span className="text-2xl font-bold text-[#4A3728]">${total}</span>
                 </div>
                 <div className="flex flex-col gap-3">
                   <Link
                     to="/cart"
                     onClick={closeCartDrawer}
-                    className="w-full h-14 bg-black text-white rounded-xl flex items-center justify-center gap-3 text-[10px] font-bold capitalize tracking-widest hover:bg-blue-600 transition-all shadow-xl"
+                    className="w-full h-12 bg-amber-50 text-amber-900 rounded-xl flex items-center justify-center gap-2 text-[10px] font-bold capitalize tracking-widest hover:bg-amber-100 transition-all border border-amber-100"
                   >
-                    View Shopping Bag
+                    Manage Cart
                   </Link>
                   <Link
                     to="/checkout"
                     onClick={closeCartDrawer}
-                    className="w-full h-14 bg-blue-600 text-white rounded-xl flex items-center justify-center gap-3 text-[10px] font-bold capitalize tracking-widest hover:bg-slate-900 transition-all shadow-xl shadow-blue-600/20"
+                    className="w-full h-12 bg-[#4A3728] text-white rounded-xl flex items-center justify-center gap-3 text-[10px] font-bold capitalize tracking-widest hover:bg-amber-800 transition-all shadow-lg"
                   >
-                    Checkout Now
-                    <ArrowRight size={16} />
+                    Continue to Checkout
+                    <ArrowRight size={14} />
                   </Link>
                 </div>
-                <p className="text-center text-[9px] font-bold text-slate-400 capitalize tracking-widest mt-6">
-                  Shipping and taxes calculated at checkout
+                <p className="text-center text-[8px] font-bold text-amber-300 capitalize tracking-widest mt-6">
+                  Taxes and shipping calculated at final step
                 </p>
               </div>
             )}

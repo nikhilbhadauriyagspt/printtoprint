@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://printiply.shop/sitemap.xml
+Sitemap: https://printtoprint.shop/sitemap.xml

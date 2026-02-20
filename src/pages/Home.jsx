@@ -3,8 +3,8 @@ import SEO from "@/components/SEO";
 import Features from "@/components/Features";
 import SpotlightSection from "@/components/SpotlightSection";
 import ShopByCategory from "@/components/ShopByCategory";
-import BrandShowcase from "@/components/BrandShowcase";
 import FeaturedTabs from "@/components/FeaturedTabs";
+import ProductAccordion from "@/components/ProductAccordion";
 import { Shield, Wrench, ArrowUpRight, Headphones, Globe, ChevronRight, Zap, Target, PieChart, ArrowRight, Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
@@ -67,7 +67,7 @@ export default function Home() {
     <div className="bg-white font-snpro overflow-x-hidden text-slate-900">
       <SEO 
         title="Authorized HP Partner | Premium Printers, Genuine Ink & Toner" 
-        description="Shop authorized HP printers, genuine ink, toner, and premium tech accessories at Printiply. Your trusted partner for high-performance printing solutions in Hickory Hills, IL and nationwide."
+        description="Shop authorized HP printers, genuine ink, toner, and premium tech accessories at PrintToPrint. Your trusted partner for high-performance printing solutions in Hickory Hills, IL and nationwide."
         keywords="HP Authorized Partner, Buy HP Printers Online, Genuine HP Ink and Toner, HP LaserJet, HP OfficeJet, Printer Accessories, Business Printing Solutions, Hickory Hills Tech Store"
       />
       
@@ -89,8 +89,8 @@ export default function Home() {
         accessories={data.accessories} 
       />
 
-      {/* 6. BRAND SHOWCASE */}
-      <BrandShowcase brands={data.brands} />
+      {/* 6. INTERACTIVE ACCORDION */}
+      <ProductAccordion products={data.all} />
 
       {/* 8. QUICK STATS STRIP */}
     </div>

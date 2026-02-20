@@ -7,7 +7,7 @@
 @theme {
   --font-urbanist: "Poppins", sans-serif;
   --font-snpro: "Poppins", sans-serif;
-  --color-brand: #625BF1;
+  --color-brand: #D97706;
 }
 
 body {
@@ -15,4 +15,5 @@ body {
   font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #FFFEF7;
 }

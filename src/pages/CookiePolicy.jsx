@@ -10,7 +10,7 @@ export default function CookiePolicy() {
       lastUpdated="February 11, 2026"
     >
       <p className="lead">
-        This Cookie Policy explains how Printiply LLC ("Company," "we," "us," or "our") uses cookies and similar technologies when you visit our website: <a href="https://printiply.shop/">https://printiply.shop/</a>
+        This Cookie Policy explains how PrintToPrint LLC ("Company," "we," "us," or "our") uses cookies and similar technologies when you visit our website: <a href="https://printtoprint.shop/">https://printtoprint.shop/</a>
       </p>
       <p>
         This Cookie Policy should be read together with our <Link to="/privacy-policy">Privacy Policy</Link> and <Link to="/terms-and-conditions">Terms and Conditions</Link>.
@@ -127,8 +127,8 @@ export default function CookiePolicy() {
       <h2>8. SALE OR SHARING OF PERSONAL INFORMATION</h2>
       <p>We do not sell personal information. If cookies are considered “sharing” under certain US state privacy laws (such as targeted advertising), you may exercise your rights by:</p>
       <ul>
-        <li>Emailing: <a href="mailto:info@printiply.shop">info@printiply.shop</a></li>
-        <li>Visiting: <Link to="/contact">https://printiply.shop/contact</Link></li>
+        <li>Emailing: <a href="mailto:info@printtoprint.shop">info@printtoprint.shop</a></li>
+        <li>Visiting: <Link to="/contact">https://printtoprint.shop/contact</Link></li>
       </ul>
 
       <h2>9. CHILDREN’S PRIVACY</h2>
@@ -140,14 +140,14 @@ export default function CookiePolicy() {
       <hr />
       <h2>11. CONTACT INFORMATION</h2>
       <p>If you have any questions regarding this Cookie Policy, please contact:</p>
-      <div className="bg-slate-50 p-8 rounded-3xl border border-slate-100 my-8 not-prose">
+      <div className="bg-amber-50/30 p-8 rounded-3xl border border-amber-100 my-8 not-prose">
         <address className="not-italic text-slate-700 font-bold leading-relaxed space-y-2">
-          <p>Printiply LLC</p>
+          <p>PrintToPrint LLC</p>
           <p>Authorised HP Partner</p>
           <p>9412 S Roberts Rd</p>
           <p>Hickory Hills, IL 60457</p>
           <p>United States</p>
-          <p className="pt-4 flex items-center gap-3 text-blue-600">info@printiply.shop</p>
+          <p className="pt-4 flex items-center gap-3 text-amber-600">info@printtoprint.shop</p>
         </address>
       </div>
     </PolicyLayout>

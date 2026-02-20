@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight, ChevronLeft, ChevronRight, Plus, Layers } from "lucide-react";
+import { ArrowRight, ChevronLeft, ChevronRight, Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Autoplay, FreeMode } from 'swiper/modules';
@@ -19,52 +19,48 @@ export default function ShopByCategory({ categories = [] }) {
   if (subcategories.length === 0) return null;
 
   return (
-    <section className="py-20 bg-white font-snpro overflow-hidden">
-      <div className="max-w-[1920px] mx-auto px-6 md:px-10 lg:px-12">
+    <section className="py-24 bg-[#FFFEF7] font-snpro overflow-hidden">
+      <div className="max-w-[1800px] mx-auto px-6">
 
-        {/* Editorial Header - Stylish & Compact */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-8">
-          <div className="flex gap-6 items-center">
-            {/* Vertical Decorative Bar */}
-            <div className="hidden md:block h-16 w-1.5 bg-brand rounded-full"></div>
-
-            <div className="space-y-1">
-              <span className="text-[10px] font-bold text-slate-400 capitalize tracking-[0.3em] flex items-center gap-2">
-                <div className="h-1 w-1 rounded-full bg-brand"></div>
-                Departments
-              </span>
-              <h2 className="text-3xl md:text-4xl font-bold text-brand capitalize  leading-none">
-                Explore <span className="text-slate-400">Range.</span>
-              </h2>
+        {/* --- STANDARDIZED SECTION HEADER --- */}
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
+          <div className="space-y-4">
+            <div className="flex items-center gap-3 opacity-40">
+              <div className="h-[1px] w-8 bg-amber-900" />
+              <span className="text-[10px] font-bold text-amber-900 uppercase tracking-[0.4em]">Browse Tech</span>
             </div>
+            <h2 className="text-4xl lg:text-5xl font-bold text-[#4A3728] tracking-tight">
+              Hardware <span className="text-amber-500 italic font-light">Departments.</span>
+            </h2>
           </div>
 
-          <div className="flex items-center gap-3">
-            <button className="cat-prev h-14 w-14 rounded-full border border-slate-100 bg-white flex items-center justify-center hover:bg-slate-950 hover:text-white transition-all shadow-sm group">
-              <ChevronLeft size={22} className="group-active:scale-75 transition-transform" />
+          {/* Compact Navigation */}
+          <div className="flex items-center gap-2">
+            <button className="cat-prev h-11 w-11 rounded-xl border border-amber-100 bg-white flex items-center justify-center text-amber-900/40 hover:text-amber-600 hover:border-amber-200 transition-all shadow-sm active:scale-90">
+              <ChevronLeft size={18} />
             </button>
-            <button className="cat-next h-14 w-14 rounded-full border border-slate-100 bg-white flex items-center justify-center hover:bg-slate-950 hover:text-white transition-all shadow-sm group">
-              <ChevronRight size={22} className="group-active:scale-75 transition-transform" />
+            <button className="cat-next h-11 w-11 rounded-xl bg-[#4A3728] flex items-center justify-center text-white hover:bg-amber-800 transition-all shadow-md active:scale-90">
+              <ChevronRight size={18} />
             </button>
           </div>
         </div>
 
-        {/* Boutique Tiles Slider */}
+        {/* --- MODULAR CATEGORY TILES --- */}
         <div className="relative">
           <Swiper
             modules={[Navigation, Autoplay, FreeMode]}
-            spaceBetween={30}
-            slidesPerView={1.5}
+            spaceBetween={24}
+            slidesPerView={1.4}
             navigation={{
               prevEl: '.cat-prev',
               nextEl: '.cat-next',
             }}
-            autoplay={{ delay: 4500, disableOnInteraction: false }}
+            autoplay={{ delay: 5000, disableOnInteraction: false }}
             breakpoints={{
-              640: { slidesPerView: 2.5 },
-              1024: { slidesPerView: 3.5 },
-              1440: { slidesPerView: 4.5 },
-              1800: { slidesPerView: 5.5 },
+              640: { slidesPerView: 2.2 },
+              1024: { slidesPerView: 3.2 },
+              1440: { slidesPerView: 4.2 },
+              1800: { slidesPerView: 5.2 },
             }}
             freeMode={true}
             className="!overflow-visible"
@@ -73,43 +69,51 @@ export default function ShopByCategory({ categories = [] }) {
               <SwiperSlide key={item.id}>
                 <Link to={`/shop?category=${item.slug}`}>
                   <motion.div
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    className="group relative flex flex-col"
+                    transition={{ delay: i * 0.05 }}
+                    className="group relative"
                   >
-                    {/* The Boutique Tile */}
-                    <div className="relative aspect-square rounded-[3rem] bg-slate-50 border border-transparent transition-all duration-700 group-hover:bg-white group-hover:border-slate-100 group-hover:shadow-[0_30px_60px_-20px_rgba(0,0,0,0.05)] overflow-hidden">
-
-                      {/* Image Layer - Full Width & Rounded */}
-                      <div className="absolute inset-0 p-3">
-                        <img
-                          src={getImagePath(item.image)}
-                          alt={item.name}
-                          className="w-full h-full object-cover rounded-[2.5rem] transition-all duration-700 opacity-80 group-hover:opacity-100"
-                          onError={(e) => { e.target.src = "https://via.placeholder.com/400x400?text=" + item.name; }}
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent rounded-[2.5rem] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                      </div>
-
-                      {/* Architectural Label (Top Left) */}
-                      <div className="absolute top-8 left-8 z-20">
-                        <div className="flex flex-col gap-1">
-                          <h3 className="text-lg font-bold text-black capitalize  leading-none group-hover:text-white">
-                            {item.name}
-                          </h3>
+                    {/* The Card */}
+                    <div className="relative aspect-[4/5] rounded-[2.5rem] bg-white border border-amber-100/50 transition-all duration-500 hover:shadow-[0_30px_60px_-20px_rgba(180,83,9,0.1)] overflow-hidden">
+                      
+                      {/* Image Context */}
+                      <div className="absolute inset-0 p-4">
+                        <div className="w-full h-full rounded-[2rem] bg-amber-50/30 overflow-hidden relative">
+                          <img
+                            src={getImagePath(item.image)}
+                            alt={item.name}
+                            className="w-full h-full object-cover transition-all duration-700 opacity-100 group-hover:scale-110 group-hover:rotate-2"
+                            onError={(e) => { e.target.src = "https://via.placeholder.com/400x500?text=" + item.name; }}
+                          />
+                          {/* Permanent Gradient for text clarity */}
+                          <div className="absolute inset-0 bg-gradient-to-t from-[#4A3728]/80 via-[#4A3728]/20 to-transparent transition-opacity duration-500" />
                         </div>
                       </div>
 
-                      {/* Corner Icon */}
-                      <div className="absolute top-8 right-8 h-10 w-10 rounded-2xl bg-white border border-slate-100 flex items-center justify-center text-slate-300 opacity-0 group-hover:opacity-100 transition-all shadow-sm">
-                        <Plus size={20} />
-                      </div>
+                      {/* Content Overlay - ALWAYS VISIBLE */}
+                      <div className="absolute inset-0 z-20 flex flex-col justify-between p-8">
+                        {/* Top: Tag */}
+                        <div className="flex justify-between items-start">
+                          <div className="h-8 w-8 rounded-xl bg-white/90 backdrop-blur-md border border-amber-100 flex items-center justify-center text-amber-600 shadow-sm transition-all duration-500">
+                            <Sparkles size={14} />
+                          </div>
+                        </div>
 
-                      {/* Footer Badge (Bottom Left) */}
-                      <div className="absolute bottom-8 left-8 z-20 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
-                        <div className="px-4 py-2 bg-white text-slate-950 rounded-full text-[8px] font-bold capitalize tracking-widest flex items-center gap-2 shadow-xl">
-                          Explore <ArrowRight size={10} />
+                        {/* Bottom: Title & Action - ALWAYS VISIBLE */}
+                        <div className="space-y-3">
+                          <h3 className="text-xl font-bold text-white leading-tight transition-colors drop-shadow-md">
+                            {item.name}
+                          </h3>
+                          <div className="flex items-center gap-2 transition-all duration-500">
+                            <span className="text-[9px] font-bold text-white uppercase tracking-widest bg-amber-500 px-3 py-1.5 rounded-full backdrop-blur-md shadow-sm">
+                              Shop Series
+                            </span>
+                            <div className="h-7 w-7 rounded-full bg-white flex items-center justify-center text-amber-600 shadow-sm">
+                              <ArrowRight size={12} />
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -120,16 +124,21 @@ export default function ShopByCategory({ categories = [] }) {
           </Swiper>
         </div>
 
-        {/* Section Footer - Standardized */}
+        {/* --- SECTION FOOTER --- */}
         <div className="mt-20 flex justify-center">
-          <div className="flex items-center gap-8 px-10 py-4 bg-slate-50/50 rounded-full border border-slate-100">
+          <Link 
+            to="/shop" 
+            className="group flex items-center gap-8 px-10 py-4 bg-white rounded-full border border-amber-100 hover:border-amber-200 shadow-sm hover:shadow-md transition-all"
+          >
             <div className="flex items-center gap-3">
-              <div className="h-1.5 w-1.5 rounded-full bg-brand"></div>
-              <span className="text-[10px] font-bold capitalize tracking-widest text-slate-400">Premium Authorized Inventory</span>
+              <div className="h-1.5 w-1.5 rounded-full bg-amber-500 animate-pulse"></div>
+              <span className="text-[10px] font-bold uppercase tracking-widest text-amber-900/40">Full Hardware Catalog</span>
             </div>
-            <div className="h-4 w-px bg-slate-200"></div>
-            <Link to="/shop" className="text-[10px] font-bold capitalize tracking-widest text-slate-900 hover:text-brand transition-colors">Browse Full Catalog</Link>
-          </div>
+            <div className="h-4 w-[1px] bg-amber-100"></div>
+            <span className="text-[10px] font-bold uppercase tracking-widest text-[#4A3728] group-hover:text-amber-600 flex items-center gap-2">
+              Browse Everything <ArrowRight size={12} className="group-hover:translate-x-1 transition-transform" />
+            </span>
+          </Link>
         </div>
       </div>
     </section>

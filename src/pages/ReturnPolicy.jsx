@@ -15,19 +15,19 @@ export default function ReturnPolicy() {
 
       <h2>RETURN PROCESS</h2>
       <p>
-        To return an item, please email customer service at <a href="mailto:info@printiply.shop">info@printiply.shop</a> to obtain an Return Merchandise Authorization (RMA) number.
+        To return an item, please email customer service at <a href="mailto:info@printtoprint.shop">info@printtoprint.shop</a> to obtain an Return Merchandise Authorization (RMA) number.
       </p>
-      <div className="bg-slate-50 p-8 rounded-3xl border border-slate-100 mt-6 not-prose">
+      <div className="bg-amber-50/30 p-8 rounded-3xl border border-amber-100 mt-6 not-prose">
         <p className="font-medium text-slate-700 mb-4 italic">After receiving an RMA number, place the item securely in its original packaging and include your proof of purchase, then mail your return to the following address:</p>
-        <address className="not-italic text-slate-900 font-bold leading-relaxed capitalize ">
-          Printiply LLC<br />
+        <address className="not-italic text-[#4A3728] font-bold leading-relaxed capitalize ">
+          PrintToPrint LLC<br />
           Attn: Returns<br />
           RMA #<br />
           9412 S Roberts Rd<br />
           Hickory Hills, IL 60457<br />
           United States
         </address>
-        <p className="mt-6 text-blue-600 font-bold capitalize text-xs tracking-widest">
+        <p className="mt-6 text-amber-600 font-bold capitalize text-xs tracking-widest">
           Return shipping charges will be paid or reimbursed by us.
         </p>
       </div>
@@ -45,9 +45,9 @@ export default function ReturnPolicy() {
       <hr />
       <h2>QUESTIONS</h2>
       <p>If you have any questions concerning our return policy, please contact us at:</p>
-      <div className="bg-slate-50 p-8 rounded-3xl border border-slate-100 my-8 not-prose">
+      <div className="bg-amber-50/30 p-8 rounded-3xl border border-amber-100 my-8 not-prose">
         <address className="not-italic text-slate-700 font-bold leading-relaxed space-y-3">
-          <p className="flex items-center gap-3 text-blue-600 font-bold ">info@printiply.shop</p>
+          <p className="flex items-center gap-3 text-amber-600 font-bold ">info@printtoprint.shop</p>
           <p className="text-[10px] text-slate-400 font-bold capitalize tracking-[0.2em]">Contact support for immediate assistance</p>
         </address>
       </div>

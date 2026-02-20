@@ -11,19 +11,19 @@ export default function TermsAndConditions() {
       <section>
         <h2>AGREEMENT TO OUR LEGAL TERMS</h2>
         <p>
-          We are Printiply LLC ("Company," "we," "us," "our"), a company registered in Illinois, United States at 9412 S Roberts Rd, Hickory Hills, IL 60457.
+          We are PrintToPrint LLC ("Company," "we," "us," "our"), a company registered in Illinois, United States at 9412 S Roberts Rd, Hickory Hills, IL 60457.
         </p>
         <p>
-          We operate the website <a href="http://printiply.shop/">http://printiply.shop/</a> (the "Site"), as well as any other related products and services that refer or link to these legal terms (the "Legal Terms") (collectively, the "Services").
+          We operate the website <a href="http://printtoprint.shop/">http://printtoprint.shop/</a> (the "Site"), as well as any other related products and services that refer or link to these legal terms (the "Legal Terms") (collectively, the "Services").
         </p>
         <p>
           Prime Fix Solutions is your trusted destination for authentic, high-performance printers and printing accessories from HP and other leading technology brands.
         </p>
         <p>
-          You can contact us by email at <a href="mailto:info@printiply.shop">info@printiply.shop</a>, or by mail to 9412 S Roberts Rd, Hickory Hills, IL 60457, United States.
+          You can contact us by email at <a href="mailto:info@printtoprint.shop">info@printtoprint.shop</a>, or by mail to 9412 S Roberts Rd, Hickory Hills, IL 60457, United States.
         </p>
         <p>
-          These Legal Terms constitute a legally binding agreement made between you, whether personally or on behalf of an entity ("you"), and Printiply LLC, concerning your access to and use of the Services. You agree that by accessing the Services, you have read, understood, and agreed to be bound by all of these Legal Terms. <strong>IF YOU DO NOT AGREE WITH ALL OF THESE LEGAL TERMS, THEN YOU ARE EXPRESSLY PROHIBITED FROM USING THE SERVICES AND YOU MUST DISCONTINUE USE IMMEDIATELY.</strong>
+          These Legal Terms constitute a legally binding agreement made between you, whether personally or on behalf of an entity ("you"), and PrintToPrint LLC, concerning your access to and use of the Services. You agree that by accessing the Services, you have read, understood, and agreed to be bound by all of these Legal Terms. <strong>IF YOU DO NOT AGREE WITH ALL OF THESE LEGAL TERMS, THEN YOU ARE EXPRESSLY PROHIBITED FROM USING THE SERVICES AND YOU MUST DISCONTINUE USE IMMEDIATELY.</strong>
         </p>
         <p>
           Supplemental terms and conditions or documents that may be posted on the Services from time to time are hereby expressly incorporated herein by reference. We reserve the right, in our sole discretion, to make changes or modifications to these Legal Terms at any time and for any reason. We will alert you about any changes by updating the "Last updated" date of these Legal Terms, and you waive any right to receive specific notice of each such change. It is your responsibility to periodically review these Legal Terms to stay informed of updates. You will be subject to, and will be deemed to have been made aware of and to have accepted, the changes in any revised Legal Terms by your continued use of the Services after the date such revised Legal Terms are posted.
@@ -36,8 +36,8 @@ export default function TermsAndConditions() {
         </p>
       </section>
 
-      <div className="bg-slate-50 p-8 rounded-[2rem] border border-slate-100 my-12 not-prose">
-        <h2 className="text-2xl font-bold text-slate-900 uppercase mt-0 mb-6 ">TABLE OF CONTENTS</h2>
+      <div className="bg-amber-50/30 p-8 rounded-[2rem] border border-amber-100 my-12 not-prose">
+        <h2 className="text-2xl font-bold text-[#4A3728] uppercase mt-0 mb-6 ">TABLE OF CONTENTS</h2>
         <ol className="text-xs font-bold text-slate-500 uppercase tracking-widest grid grid-cols-1 md:grid-cols-2 gap-4 list-decimal pl-5">
           <li>OUR SERVICES</li>
           <li>INTELLECTUAL PROPERTY RIGHTS</li>
@@ -106,7 +106,7 @@ export default function TermsAndConditions() {
           Except as set out in this section or elsewhere in our Legal Terms, no part of the Services and no Content or Marks may be copied, reproduced, aggregated, republished, uploaded, posted, publicly displayed, encoded, translated, transmitted, distributed, sold, licensed, or otherwise exploited for any commercial purpose whatsoever, without our express prior written permission.
         </p>
         <p>
-          If you wish to make any use of the Services, Content, or Marks other than as set out in this section or elsewhere in our Legal Terms, please address your request to: <a href="mailto:info@printiply.shop">info@printiply.shop</a>. If we ever grant you the permission to post, reproduce, or publicly display any part of our Services or Content, you must identify us as the owners or licensors of the Services, Content, or Marks and ensure that any copyright or proprietary notice appears or is visible on posting, reproducing, or displaying our Content.
+          If you wish to make any use of the Services, Content, or Marks other than as set out in this section or elsewhere in our Legal Terms, please address your request to: <a href="mailto:info@printtoprint.shop">info@printtoprint.shop</a>. If we ever grant you the permission to post, reproduce, or publicly display any part of our Services or Content, you must identify us as the owners or licensors of the Services, Content, or Marks and ensure that any copyright or proprietary notice appears or is visible on posting, reproducing, or displaying our Content.
         </p>
         <p>
           We reserve all rights not expressly granted to you in and to the Services, Content, and Marks.
@@ -178,7 +178,7 @@ export default function TermsAndConditions() {
       <section>
         <h2>7. RETURN POLICY</h2>
         <p>
-          Please review our Return Policy prior to making any purchases: <a href="http://printiply.shop/return-policy">http://printiply.shop/return-policy</a>.
+          Please review our Return Policy prior to making any purchases: <a href="http://printtoprint.shop/return-policy">http://printtoprint.shop/return-policy</a>.
         </p>
       </section>
 
@@ -266,7 +266,7 @@ export default function TermsAndConditions() {
       <section>
         <h2>12. PRIVACY POLICY</h2>
         <p>
-          We care about data privacy and security. Please review our Privacy Policy: <a href="http://printiply.shop/privacy-policy">http://printiply.shop/privacy-policy</a>. By using the Services, you agree to be bound by our Privacy Policy, which is incorporated into these Legal Terms. Please be advised the Services are hosted in the United States. If you access the Services from any other region of the world with laws or other requirements governing personal data collection, use, or disclosure that differ from applicable laws in the United States, then through your continued use of the Services, you are transferring your data to the United States, and you expressly consent to have your data transferred to and processed in the United States.
+          We care about data privacy and security. Please review our Privacy Policy: <a href="http://printtoprint.shop/privacy-policy">http://printtoprint.shop/privacy-policy</a>. By using the Services, you agree to be bound by our Privacy Policy, which is incorporated into these Legal Terms. Please be advised the Services are hosted in the United States. If you access the Services from any other region of the world with laws or other requirements governing personal data collection, use, or disclosure that differ from applicable laws in the United States, then through your continued use of the Services, you are transferring your data to the United States, and you expressly consent to have your data transferred to and processed in the United States.
         </p>
       </section>
 
@@ -313,7 +313,7 @@ export default function TermsAndConditions() {
 
       <section>
         <h2>18. DISCLAIMER</h2>
-        <p className="font-bold text-slate-900 uppercase  italic">
+        <p className="font-bold text-[#4A3728] uppercase  italic">
           THE SERVICES ARE PROVIDED ON AN AS-IS AND AS-AVAILABLE BASIS. YOU AGREE THAT YOUR USE OF THE SERVICES WILL BE AT YOUR SOLE RISK. TO THE FULLEST EXTENT PERMITTED BY LAW, WE DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED, IN CONNECTION WITH THE SERVICES AND YOUR USE THEREOF, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. WE MAKE NO WARRANTIES OR REPRESENTATIONS ABOUT THE ACCURACY OR COMPLETENESS OF THE SERVICES' CONTENT OR THE CONTENT OF ANY WEBSITES OR MOBILE APPLICATIONS LINKED TO THE SERVICES AND WE WILL ASSUME NO LIABILITY OR RESPONSIBILITY FOR ANY (1) ERRORS, MISTAKES, OR INACCURACIES OF CONTENT AND MATERIALS, (2) PERSONAL INJURY OR PROPERTY DAMAGE, OF ANY NATURE WHATSOEVER, RESULTING FROM YOUR ACCESS TO AND USE OF THE SERVICES, (3) ANY UNAUTHORIZED ACCESS TO OR USE OF OUR SECURE SERVERS AND/OR ANY AND ALL PERSONAL INFORMATION AND/OR FINANCIAL INFORMATION STORED THEREIN, (4) ANY INTERRUPTION OR CESSATION OF TRANSMISSION TO OR FROM THE SERVICES, (5) ANY BUGS, VIRUSES, TROJAN HORSES, OR THE LIKE WHICH MAY BE TRANSMITTED TO OR THROUGH THE SERVICES BY ANY THIRD PARTY, AND/OR (6) ANY ERRORS OR OMISSIONS IN ANY CONTENT AND MATERIALS OR FOR ANY LOSS OR DAMAGE OF ANY KIND INCURRED AS A RESULT OF THE USE OF ANY CONTENT POSTED, TRANSMITTED, OR OTHERWISE MADE AVAILABLE VIA THE SERVICES. WE DO NOT WARRANT, ENDORSE, GUARANTEE, OR ASSUME RESPONSIBILITY FOR ANY PRODUCT OR SERVICE ADVERTISED OR OFFERED BY A THIRD PARTY THROUGH THE SERVICES, ANY HYPERLINKED WEBSITE, OR ANY WEBSITE OR MOBILE APPLICATION FEATURED IN ANY BANNER OR OTHER ADVERTISING, AND WE WILL NOT BE A PARTY TO OR IN ANY WAY BE RESPONSIBLE FOR MONITORING ANY TRANSACTION BETWEEN YOU AND ANY THIRD-PARTY PROVIDERS OF PRODUCTS OR SERVICES. AS WITH THE PURCHASE OF A PRODUCT OR SERVICE THROUGH ANY MEDIUM OR IN ANY ENVIRONMENT, YOU SHOULD USE YOUR BEST JUDGMENT AND EXERCISE CAUTION WHERE APPROPRIATE.
         </p>
       </section>
@@ -366,14 +366,14 @@ export default function TermsAndConditions() {
         <p>
           In order to resolve a complaint regarding the Services or to receive further information regarding use of the Services, please contact us at:
         </p>
-        <div className="bg-slate-50 p-8 rounded-3xl border border-slate-100 my-8 not-prose">
+        <div className="bg-amber-50/30 p-8 rounded-3xl border border-amber-100 my-8 not-prose">
           <address className="not-italic text-slate-700 font-bold leading-relaxed space-y-2 uppercase ">
-            <p className="text-slate-900 font-bold">Printiply LLC</p>
+            <p className="text-[#4A3728] font-bold">PrintToPrint LLC</p>
             <p>Authorised HP Partner</p>
             <p>9412 S Roberts Rd</p>
             <p>Hickory Hills, IL 60457</p>
             <p>United States</p>
-            <p className="pt-4 text-blue-600 font-bold">Email: info@printiply.shop</p>
+            <p className="pt-4 text-amber-600 font-bold">Email: info@printtoprint.shop</p>
           </address>
         </div>
       </section>

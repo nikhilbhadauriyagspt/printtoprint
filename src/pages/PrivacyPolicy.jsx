@@ -9,7 +9,7 @@ export default function PrivacyPolicy() {
       lastUpdated="February 11, 2026"
     >
       <p className="lead">
-        This Privacy Notice for Printiply LLC ("we," "us," or "our"), describes how and why we might access, collect, store, use, and/or share ("process") your personal information when you use our services ("Services"), including when you:
+        This Privacy Notice for PrintToPrint LLC ("we," "us," or "our"), describes how and why we might access, collect, store, use, and/or share ("process") your personal information when you use our services ("Services"), including when you:
       </p>
       <ul>
         <li>Visit our website at <a href="http://primefixsolutions.co/">http://primefixsolutions.co/</a> or any website of ours that links to this Privacy Notice</li>
@@ -17,11 +17,11 @@ export default function PrivacyPolicy() {
         <li>Engage with us in other related ways, including any marketing or events</li>
       </ul>
       <p>
-        Questions or concerns? Reading this Privacy Notice will help you understand your privacy rights and choices. We are responsible for making decisions about how your personal information is processed. If you do not agree with our policies and practices, please do not use our Services. If you still have any questions or concerns, please contact us at <a href="mailto:info@printiply.shop">info@printiply.shop</a>.
+        Questions or concerns? Reading this Privacy Notice will help you understand your privacy rights and choices. We are responsible for making decisions about how your personal information is processed. If you do not agree with our policies and practices, please do not use our Services. If you still have any questions or concerns, please contact us at <a href="mailto:info@printtoprint.shop">info@printtoprint.shop</a>.
       </p>
 
-      <div className="bg-slate-50 p-8 rounded-[2rem] border border-slate-100 my-12 not-prose">
-        <h2 className="text-2xl font-bold text-slate-900 capitalize mt-0 mb-6 ">SUMMARY OF KEY POINTS</h2>
+      <div className="bg-amber-50/30 p-8 rounded-[2rem] border border-amber-100 my-12 not-prose">
+        <h2 className="text-2xl font-bold text-[#4A3728] capitalize mt-0 mb-6 ">SUMMARY OF KEY POINTS</h2>
         <p className="text-sm text-slate-600 leading-relaxed space-y-4">
           This summary provides key points from our Privacy Notice, but you can find out more details about any of these topics by clicking the link following each key point or by using our table of contents below to find the section you are looking for.
         </p>
@@ -131,7 +131,7 @@ export default function PrivacyPolicy() {
 
       <h2>8. DO WE COLLECT INFORMATION FROM MINORS?</h2>
       <p><strong>In Short:</strong> We do not knowingly collect data from or market to children under 18 years of age or the equivalent age as specified by law in your jurisdiction.</p>
-      <p>We do not knowingly collect, solicit data from, or market to children under 18 years of age or the equivalent age as specified by law in your jurisdiction, nor do we knowingly sell such personal information. By using the Services, you represent that you are at least 18 or the equivalent age as specified by law in your jurisdiction or that you are the parent or guardian of such a minor and consent to such minor dependent’s use of the Services. If we learn that personal information from users less than 18 years of age or the equivalent age as specified by law in your jurisdiction has been collected, we will deactivate the account and take reasonable measures to promptly delete such data from our records. If you become aware of any data we may have collected from children under age 18 or the equivalent age as specified by law in your jurisdiction, please contact us at <a href="mailto:info@printiply.shop">info@printiply.shop</a>.</p>
+      <p>We do not knowingly collect, solicit data from, or market to children under 18 years of age or the equivalent age as specified by law in your jurisdiction, nor do we knowingly sell such personal information. By using the Services, you represent that you are at least 18 or the equivalent age as specified by law in your jurisdiction or that you are the parent or guardian of such a minor and consent to such minor dependent’s use of the Services. If we learn that personal information from users less than 18 years of age or the equivalent age as specified by law in your jurisdiction has been collected, we will deactivate the account and take reasonable measures to promptly delete such data from our records. If you become aware of any data we may have collected from children under age 18 or the equivalent age as specified by law in your jurisdiction, please contact us at <a href="mailto:info@printtoprint.shop">info@printtoprint.shop</a>.</p>
 
       <h2>9. WHAT ARE YOUR PRIVACY RIGHTS?</h2>
       <p><strong>In Short:</strong> Depending on your state of residence in the US or in some regions, such as Canada, you have rights that allow you greater access to and control over your personal information. You may review, change, or terminate your account at any time, depending on your country, province, or state of residence.</p>
@@ -146,7 +146,7 @@ export default function PrivacyPolicy() {
       </ul>
       <p>Upon your request to terminate your account, we will deactivate or delete your account and information from our active databases. However, we may retain some information in our files to prevent fraud, troubleshoot problems, assist with any investigations, enforce our legal terms and/or comply with applicable legal requirements.</p>
       <p><strong>Cookies and similar technologies:</strong> Most Web browsers are set to accept cookies by default. If you prefer, you can usually choose to set your browser to remove cookies and to reject cookies. If you choose to remove cookies or reject cookies, this could affect certain features or services of our Services. For further information, please see our Cookie Notice: <a href="http://primefixsolutions.co/cookie-policy">http://primefixsolutions.co/cookie-policy</a>.</p>
-      <p>If you have questions or comments about your privacy rights, you may email us at <a href="mailto:info@printiply.shop">info@printiply.shop</a>.</p>
+      <p>If you have questions or comments about your privacy rights, you may email us at <a href="mailto:info@printtoprint.shop">info@printtoprint.shop</a>.</p>
 
       <h2>10. CONTROLS FOR DO-NOT-TRACK FEATURES</h2>
       <p>Most web browsers and some mobile operating systems and mobile applications include a Do-Not-Track ("DNT") feature or setting you can activate to signal your privacy preference not to have data about your online browsing activities monitored and collected. At this stage, no uniform technology standard for recognizing and implementing DNT signals has been finalized. As such, we do not currently respond to DNT browser signals or any other mechanism that automatically communicates your choice not to be tracked online. If a standard for online tracking is adopted that we must follow in the future, we will inform you about that practice in a revised version of this Privacy Notice.</p>
@@ -159,7 +159,7 @@ export default function PrivacyPolicy() {
 
       <div className="overflow-x-auto my-8 not-prose">
         <table className="w-full text-sm text-left text-slate-500 border border-slate-200">
-          <thead className="text-xs text-slate-700 capitalize bg-slate-50 border-b border-slate-200">
+          <thead className="text-xs text-slate-700 capitalize bg-amber-50/30 border-b border-slate-200">
             <tr>
               <th className="px-6 py-3 border-r border-slate-200">Category</th>
               <th className="px-6 py-3 border-r border-slate-200">Examples</th>
@@ -168,64 +168,64 @@ export default function PrivacyPolicy() {
           </thead>
           <tbody>
             <tr className="border-b border-slate-200">
-              <td className="px-6 py-4 font-bold text-slate-900 border-r border-slate-200">A. Identifiers</td>
+              <td className="px-6 py-4 font-bold text-[#4A3728] border-r border-slate-200">A. Identifiers</td>
               <td className="px-6 py-4 border-r border-slate-200">Contact details, such as real name, alias, postal address, telephone or mobile contact number, unique personal identifier, online identifier, Internet Protocol address, email address, and account name</td>
-              <td className="px-6 py-4 text-slate-900 font-bold">NO</td>
+              <td className="px-6 py-4 text-[#4A3728] font-bold">NO</td>
             </tr>
             <tr className="border-b border-slate-200">
-              <td className="px-6 py-4 font-bold text-slate-900 border-r border-slate-200">B. Personal information as defined in the California Customer Records statute</td>
+              <td className="px-6 py-4 font-bold text-[#4A3728] border-r border-slate-200">B. Personal information as defined in the California Customer Records statute</td>
               <td className="px-6 py-4 border-r border-slate-200">Name, contact information, education, employment, employment history, and financial information</td>
-              <td className="px-6 py-4 text-slate-900 font-bold">NO</td>
+              <td className="px-6 py-4 text-[#4A3728] font-bold">NO</td>
             </tr>
             <tr className="border-b border-slate-200">
-              <td className="px-6 py-4 font-bold text-slate-900 border-r border-slate-200">C. Protected classification characteristics under state or federal law</td>
+              <td className="px-6 py-4 font-bold text-[#4A3728] border-r border-slate-200">C. Protected classification characteristics under state or federal law</td>
               <td className="px-6 py-4 border-r border-slate-200">Gender, age, date of birth, race and ethnicity, national origin, marital status, and other demographic data</td>
-              <td className="px-6 py-4 text-slate-900 font-bold">NO</td>
+              <td className="px-6 py-4 text-[#4A3728] font-bold">NO</td>
             </tr>
             <tr className="border-b border-slate-200">
-              <td className="px-6 py-4 font-bold text-slate-900 border-r border-slate-200">D. Commercial information</td>
+              <td className="px-6 py-4 font-bold text-[#4A3728] border-r border-slate-200">D. Commercial information</td>
               <td className="px-6 py-4 border-r border-slate-200">Transaction information, purchase history, financial details, and payment information</td>
-              <td className="px-6 py-4 text-slate-900 font-bold">NO</td>
+              <td className="px-6 py-4 text-[#4A3728] font-bold">NO</td>
             </tr>
             <tr className="border-b border-slate-200">
-              <td className="px-6 py-4 font-bold text-slate-900 border-r border-slate-200">E. Biometric information</td>
+              <td className="px-6 py-4 font-bold text-[#4A3728] border-r border-slate-200">E. Biometric information</td>
               <td className="px-6 py-4 border-r border-slate-200">Fingerprints and voiceprints</td>
-              <td className="px-6 py-4 text-slate-900 font-bold">NO</td>
+              <td className="px-6 py-4 text-[#4A3728] font-bold">NO</td>
             </tr>
             <tr className="border-b border-slate-200">
-              <td className="px-6 py-4 font-bold text-slate-900 border-r border-slate-200">F. Internet or other similar network activity</td>
+              <td className="px-6 py-4 font-bold text-[#4A3728] border-r border-slate-200">F. Internet or other similar network activity</td>
               <td className="px-6 py-4 border-r border-slate-200">Browsing history, search history, online behavior, interest data, and interactions with our and other websites, applications, systems, and advertisements</td>
-              <td className="px-6 py-4 text-slate-900 font-bold">NO</td>
+              <td className="px-6 py-4 text-[#4A3728] font-bold">NO</td>
             </tr>
             <tr className="border-b border-slate-200">
-              <td className="px-6 py-4 font-bold text-slate-900 border-r border-slate-200">G. Geolocation data</td>
+              <td className="px-6 py-4 font-bold text-[#4A3728] border-r border-slate-200">G. Geolocation data</td>
               <td className="px-6 py-4 border-r border-slate-200">Device location</td>
-              <td className="px-6 py-4 text-slate-900 font-bold">NO</td>
+              <td className="px-6 py-4 text-[#4A3728] font-bold">NO</td>
             </tr>
             <tr className="border-b border-slate-200">
-              <td className="px-6 py-4 font-bold text-slate-900 border-r border-slate-200">H. Audio, electronic, sensory, or similar information</td>
+              <td className="px-6 py-4 font-bold text-[#4A3728] border-r border-slate-200">H. Audio, electronic, sensory, or similar information</td>
               <td className="px-6 py-4 border-r border-slate-200">Images and audio, video or call recordings created in connection with our business activities</td>
-              <td className="px-6 py-4 text-slate-900 font-bold">NO</td>
+              <td className="px-6 py-4 text-[#4A3728] font-bold">NO</td>
             </tr>
             <tr className="border-b border-slate-200">
-              <td className="px-6 py-4 font-bold text-slate-900 border-r border-slate-200">I. Professional or employment-related information</td>
+              <td className="px-6 py-4 font-bold text-[#4A3728] border-r border-slate-200">I. Professional or employment-related information</td>
               <td className="px-6 py-4 border-r border-slate-200">Business contact details in order to provide you our Services at a business level or job title, work history, and professional qualifications if you apply for a job with us</td>
-              <td className="px-6 py-4 text-slate-900 font-bold">NO</td>
+              <td className="px-6 py-4 text-[#4A3728] font-bold">NO</td>
             </tr>
             <tr className="border-b border-slate-200">
-              <td className="px-6 py-4 font-bold text-slate-900 border-r border-slate-200">J. Education Information</td>
+              <td className="px-6 py-4 font-bold text-[#4A3728] border-r border-slate-200">J. Education Information</td>
               <td className="px-6 py-4 border-r border-slate-200">Student records and directory information</td>
-              <td className="px-6 py-4 text-slate-900 font-bold">NO</td>
+              <td className="px-6 py-4 text-[#4A3728] font-bold">NO</td>
             </tr>
             <tr className="border-b border-slate-200">
-              <td className="px-6 py-4 font-bold text-slate-900 border-r border-slate-200">K. Inferences drawn from collected personal information</td>
+              <td className="px-6 py-4 font-bold text-[#4A3728] border-r border-slate-200">K. Inferences drawn from collected personal information</td>
               <td className="px-6 py-4 border-r border-slate-200">Inferences drawn from any of the collected personal information listed above to create a profile or summary about, for example, an individual’s preferences and characteristics</td>
-              <td className="px-6 py-4 text-slate-900 font-bold">NO</td>
+              <td className="px-6 py-4 text-[#4A3728] font-bold">NO</td>
             </tr>
             <tr>
-              <td className="px-6 py-4 font-bold text-slate-900 border-r border-slate-200">L. Sensitive personal Information</td>
+              <td className="px-6 py-4 font-bold text-[#4A3728] border-r border-slate-200">L. Sensitive personal Information</td>
               <td className="px-6 py-4 border-r border-slate-200">None</td>
-              <td className="px-6 py-4 text-slate-900 font-bold">NO</td>
+              <td className="px-6 py-4 text-[#4A3728] font-bold">NO</td>
             </tr>
           </tbody>
         </table>
@@ -267,13 +267,13 @@ export default function PrivacyPolicy() {
         <li>Right to opt out of the collection of sensitive data and personal data collected through the operation of a voice or facial recognition feature (as permitted by applicable law, including the privacy law in Florida)</li>
       </ul>
       <h3>How to Exercise Your Rights</h3>
-      <p>To exercise these rights, you can contact us by submitting a data subject access request, by emailing us at info@printiply.shop, by visiting <a href="http://primefixsolutions.co/contact">http://primefixsolutions.co/contact</a>, or by referring to the contact details at the bottom of this document.</p>
+      <p>To exercise these rights, you can contact us by submitting a data subject access request, by emailing us at info@printtoprint.shop, by visiting <a href="http://primefixsolutions.co/contact">http://primefixsolutions.co/contact</a>, or by referring to the contact details at the bottom of this document.</p>
       <p>Under certain US state data protection laws, you can designate an authorized agent to make a request on your behalf. We may deny a request from an authorized agent that does not submit proof that they have been validly authorized to act on your behalf in accordance with applicable laws.</p>
       <h3>Request Verification</h3>
       <p>Upon receiving your request, we will need to verify your identity to determine you are the same person about whom we have the information in our system. We will only use personal information provided in your request to verify your identity or authority to make the request. However, if we cannot verify your identity from the information already maintained by us, we may request that you provide additional information for the purposes of verifying your identity and for security or fraud-prevention purposes.</p>
       <p>If you submit the request through an authorized agent, we may need to collect additional information to verify your identity before processing your request and the agent will need to provide a written and signed permission from you to submit such request on your behalf.</p>
       <h3>Appeals</h3>
-      <p>Under certain US state data protection laws, if we decline to take action regarding your request, you may appeal our decision by emailing us at <a href="mailto:info@printiply.shop">info@printiply.shop</a>. We will inform you in writing of any action taken or not taken in response to the appeal, including a written explanation of the reasons for the decisions. If your appeal is denied, you may submit a complaint to your state attorney general.</p>
+      <p>Under certain US state data protection laws, if we decline to take action regarding your request, you may appeal our decision by emailing us at <a href="mailto:info@printtoprint.shop">info@printtoprint.shop</a>. We will inform you in writing of any action taken or not taken in response to the appeal, including a written explanation of the reasons for the decisions. If your appeal is denied, you may submit a complaint to your state attorney general.</p>
       <h3>California "Shine The Light" Law</h3>
       <p>California Civil Code Section 1798.83, also known as the "Shine The Light" law, permits our users who are California residents to request and obtain from us, once a year and free of charge, information about categories of personal information (if any) we disclosed to third parties for direct marketing purposes and the names and addresses of all third parties with which we shared personal information in the immediately preceding calendar year. If you are a California resident and would like to make such a request, please submit your request in writing to us by using the contact details provided in the section "HOW CAN YOU CONTACT US ABOUT THIS NOTICE?"</p>
 
@@ -282,10 +282,10 @@ export default function PrivacyPolicy() {
       <p>We may update this Privacy Notice from time to time. The updated version will be indicated by an updated "Revised" date at the top of this Privacy Notice. If we make material changes to this Privacy Notice, we may notify you either by prominently posting a notice of such changes or by directly sending you a notification. We encourage you to review this Privacy Notice frequently to be informed of how we are protecting your information.</p>
 
       <h2>13. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</h2>
-      <p>If you have questions or comments about this notice, you may email us at <a href="mailto:info@printiply.shop">info@printiply.shop</a> or contact us by post at:</p>
-      <div className="bg-slate-50 p-8 rounded-3xl border border-slate-100 my-8 not-prose">
+      <p>If you have questions or comments about this notice, you may email us at <a href="mailto:info@printtoprint.shop">info@printtoprint.shop</a> or contact us by post at:</p>
+      <div className="bg-amber-50/30 p-8 rounded-3xl border border-amber-100 my-8 not-prose">
         <address className="not-italic text-slate-700 font-bold leading-relaxed">
-          Printiply LLC<br />
+          PrintToPrint LLC<br />
           Authorised HP Partner<br />
           9412 S Roberts Rd<br />
           Hickory Hills, IL 60457<br />
