@@ -176,7 +176,7 @@ export default function Header() {
                         className="absolute top-full -left-20 pt-4 w-[1100px] z-[160]"
                       >
                         <div className="bg-white rounded-[3rem] shadow-[0_60px_100px_-20px_rgba(180,83,9,0.15)] border border-amber-100 overflow-hidden flex min-h-[550px]">
-                          
+
                           {/* Zone 1: Vertical Category List (Left) */}
                           <div className="w-[25%] bg-amber-50/20 p-8 border-r border-amber-100/30">
                             <div className="flex items-center gap-2 mb-8 ml-2">
@@ -221,17 +221,17 @@ export default function Header() {
                               <div className="grid grid-cols-2 gap-x-8 gap-y-6">
                                 {subCategoriesToDisplay.length > 0 ? (
                                   subCategoriesToDisplay.map(sub => (
-                                    <Link 
-                                      key={sub.id} 
-                                      to={`/shop?category=${sub.slug}`} 
-                                      onClick={() => setActiveDropdown(null)} 
+                                    <Link
+                                      key={sub.id}
+                                      to={`/shop?category=${sub.slug}`}
+                                      onClick={() => setActiveDropdown(null)}
                                       className="group/sub flex items-center gap-4"
                                     >
                                       <div className="h-10 w-10 rounded-xl bg-amber-50 flex items-center justify-center p-2 group-hover/sub:bg-amber-100 transition-all">
-                                        <img 
-                                          src={sub.image ? `/${sub.image}` : `https://ui-avatars.com/api/?name=${sub.name}&background=fffbeb&color=d97706`} 
-                                          alt="" 
-                                          className="max-w-full max-h-full object-contain mix-blend-multiply" 
+                                        <img
+                                          src={sub.image ? `/${sub.image}` : `https://ui-avatars.com/api/?name=${sub.name}&background=fffbeb&color=d97706`}
+                                          alt=""
+                                          className="max-w-full max-h-full object-contain mix-blend-multiply"
                                           onError={(e) => e.target.style.display = 'none'}
                                         />
                                       </div>
@@ -254,7 +254,7 @@ export default function Header() {
                           {/* Zone 3: Featured Promo (Right) */}
                           <div className="w-[25%] bg-[#4A3728] p-10 text-white flex flex-col justify-between relative overflow-hidden">
                             <div className="absolute top-0 right-0 w-32 h-32 bg-white/5 blur-3xl rounded-full -mr-10 -mt-10" />
-                            
+
                             <div className="relative z-10 space-y-6">
                               <div className="h-10 w-10 rounded-xl bg-white/10 flex items-center justify-center text-amber-400 border border-white/5">
                                 <Award size={20} />
@@ -286,13 +286,13 @@ export default function Header() {
           {/* Panel 2: Branding Hub (Permanent Sleek Glass-Split Pill) */}
           <div className="flex-shrink-0 flex items-center justify-center pointer-events-auto mx-4 lg:mx-8">
             <Link to="/" className="group relative">
-              <div className={`flex items-center transition-all duration-700 rounded-full border border-amber-100 shadow-xl bg-white/90 backdrop-blur-xl ${scrolled ? 'px-4 lg:px-6 py-1.5' : 'px-6 lg:px-8 py-2.5 lg:py-4'}`}>
-                
+              <div className={`flex items-center transition-all duration-700 rounded-full border border-amber-100 shadow-xl bg-white/90 backdrop-blur-xl ${scrolled ? 'px-4 lg:px-6 py-1.5' : 'px-6 lg:px-8 py-1 '}`}>
+
                 {/* Logo Side */}
-                <div className={`flex items-center justify-center transition-all duration-700 ${scrolled ? 'h-8 w-8 lg:h-10 lg:w-10' : 'h-10 w-10 lg:h-14 lg:w-14'}`}>
-                  <img 
-                    src="/logo/printtoprint_logo.png" 
-                    alt="P" 
+                <div className={`flex items-center justify-center transition-all duration-700 ${scrolled ? 'h-8 w-8 lg:h-10 lg:w-16' : 'h-10 w-10 lg:h-14 lg:w-24'}`}>
+                  <img
+                    src="/logo/printtoprint_logo.png"
+                    alt="P"
                     className="max-w-full max-h-full object-contain transition-transform duration-700 group-hover:scale-110"
                   />
                 </div>
@@ -541,8 +541,6 @@ export default function Header() {
           <div className="fixed inset-0 z-[140] bg-black/5 pointer-events-auto" onMouseEnter={() => setActiveDropdown(null)} />
         )}
       </AnimatePresence>
-
-      <div className={`transition-all duration-500 ${scrolled ? 'h-[60px] lg:h-[70px]' : 'h-[80px] lg:h-[110px]'}`}></div>
     </>
   );
 }
